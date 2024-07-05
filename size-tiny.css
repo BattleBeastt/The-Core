@@ -1,0 +1,32 @@
+.small {
+display: inherit !important;
+flex-direction:column;
+font-size:1em;
+text-align:center;
+width:100%;
+font-family:arial;
+}
+.resize-small {
+font-family:helvetica, serif;
+width:95%;
+font-size:0.8em;
+}
+.image1{
+	width:50%;
+	height:100%;
+}
+#mision{
+	padding-top:4%;
+	flex-direction:column-reverse;
+}
+#vision{
+	flex-direction:column;
+	padding-bottom:3%;
+}
+.text1{
+	font-size:0.9em;
+	margin-bottom:3%;
+}
+.subtitle2{
+	font-size:1.3em;
+}

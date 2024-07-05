@@ -1,0 +1,15 @@
+.medium {
+display:inherit !important;
+flex-direction:column;
+border:none;
+text-align:center;
+}
+footer{
+font-size:0.8em;
+}
+.resize-medium {
+border:none !important;
+display:inline !important;
+}
+.redes{
+position:fixed;}

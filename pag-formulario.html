@@ -4,92 +4,91 @@
 <meta charset="utf-8">
 <title>Fundación ecuatoriana construyendo vidas</title>
 <meta name="viewport" content="width=device-width;initial-scale=1.0">
-<link rel="stylesheet" href="letters.css">
+<link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="form-dona.css">
+<link rel="stylesheet" href="size-big.css" media="screen and (min-width:981px)">
 <link rel="stylesheet" href="size-middle.css" media="screen and (min-width:481px) and (max-width:980px)">
 <link rel="stylesheet" href="size-tiny.css" media="screen and (max-width:480px)">
-<link rel="stylesheet" href="size-big.css" media="screen and (min-width:981px)">
 </head>
 <body>
 	<header class="medium small">
+		 <div class="logo-abb">
 		 <img src="fecv.jpg" alt="logo de Fundacion" class="logo">
 		 <h1 id="name-empresa" class="big medium">FECV</h1>
+		 </div>
 	  <nav>
 	   <ul>
-		 <li><a href="pagSala.html" target="_blank">Inicio</a></li>
-		 <li><a href="#" target="_blank">Contactanos</a></li>
-		 <li><a href="#" target="_blank">Galeria</a></li>
-		 <li><a href="pag-formulario.html" target="_blank">Donar</a></li>
+		 <li><a href="pagSala.html" target="_blank" class="big">Inicio</a></li>
+		 <li><a href="#" target="_blank" class="big">Contactanos</a></li>
+		 <li><a href="pag-galeria.html" target="_blank"class="big">Galeria</a></li>
+		 <li><a href="pag-formulario.html" target="_blank" class="big">Contribuir</a></li>
 	   </ul>
 	  </nav>
 	</header>
 <main id="intro">
 <form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
-	<legend id="title1">REGISTRO DE DONACION</legend>
-<fieldset id="campos-dt">
-		<legend class="title2">Datos personales</legend>
-<label class="name">Nombres </label><input type="text" placeholder="introduzca sus nombres" class="resize-small" required><br/>
-<label class="last-name">Apellidos </label><input type="text" placeholder="introduzca sus apellidos" class="resize-small" required ><br/>
-<label class="correo">E-mail </label><input type="email" placeholder="introduzca direccion de correo" class="resize-small" required><br/>
-<label class="phone">nº de teléfono </label><input type="text" required placeholder="ingrese un numero de telefono" class="resize-small"><br/>
-<label class="cedula">ID o pasaporte </label><input type="text" min="5" max="12" placeholder="introduzca numero de cedula o pasaporte" class="resize-small" required><br/>
-<!--emplear codigo JS para hacer dinamico el medio de pago-->
-<fieldset id="campos-dona">
-	<legend class="title2">Donativo</legend>
-	<label class="pago">Medio de Pago</label>
-	<select class="medio">
-	<option>Tarjeta de Crédito</option>
-	<option>Transferencia</option>
-	<option>Débito Bancario</option>
-<!-- emplear codigo JS para reducir esta seccion-->	
-</select>
-<label id="divis">Divisa</label>
-<select class="divisa">
-<option>USD</option>    
-<option>EUR</option>    
-<option>JPY</option>    
-<option>GBP</option>
-<option>AUD</option>
-<option>CAD</option>
-<option>CHF</option>
-<option>CNH</option>
-<option>HKD</option>
-<option>NZD</option>    
-</select>
+		<legend id="title2">REGISTRO DE DONACION</legend>
+		<fieldset class="divisor">
+		<legend class="leyenda">Datos personales</legend>
+		<label for="name">Nombres </label><input type="text" id="name" name="name" placeholder="introduzca sus nombres" class="resize-small" required><br/>
+		<label for="lastName">Apellidos </label><input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" class="resize-small" required ><br/>
+		<label for="correo">Correo Electronico </label><input type="email" id="correo" name="email" placeholder="introduzca direccion de correo" class="resize-small" required><br/>
+		<label for="phone">nº de teléfono </label><input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br/>
+		<label for="cedula">ID o pasaporte </label><input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br/>
+<!--emplear codigo JS para dinamizar los medios de pago-->
+<fieldset class="divisor">
+	<legend class="leyenda">Donativo</legend>
+		<label for="pago">Medio de pago</label>
+		<select id="medio">
+			<option>Tarjeta de Crédito</option>
+			<option>Transferencia</option>
+			<option>Débito Bancario</option>
+		 </select>
+<!-- emplear codigo JS para reducir esta seccion-->
+			<label for="divisa">Divisa</label>
+			  <select id="divisa" name="divisa">
+				<option>USD</option>    
+				<option>EUR</option>    
+				<option>JPY</option>    
+				<option>GBP</option>
+				<option>AUD</option>
+				<option>CAD</option>
+				<option>CHF</option>
+				<option>CNH</option>
+				<option>HKD</option>
+				<option>NZD</option>    
+			  </select>
 </fieldset>
-<label for="valor" class="cant">Cantidad </label><input id="valor" type="text" placeholder="e.g. 800" required><br/>
-<input type="checkbox" class="conditions" name="requisito" required><label class="condi resize-small"> eh leido y acepto los <a href="#">terminos, condiciones y politicas de privacidad</a> en este formulario</label><br/>
-<input type="checkbox" class="conditions" name="requisito" required><label class="condi resize-small">comprendo y acepto toda la informacion proporcionada en este formulario</label>
-<input type="submit" value="DONAR" class="boton" name="requisito">
+<label for="valor" class="cant">Cantidad a donar</label><input id="valor" name="valor" type="text" placeholder="e.g. 800" required><br/>
+<input type="checkbox" class="conditions" name="requisito" id="politicas" required><label for="politicas"> eh leido y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a>en este formulario</label><br/>
+<input type="checkbox" class="conditions" name="requisito" id="check" required><label for="check">comprendo y acepto toda la informacion proporcionada en este formulario</label>
+<label for="boton"></label>
+<input type="submit" value="Donar" id="boton" name="boton">
 </form>
 </main>
 	<!--agregar enlaces en los links, cuando todas las paginas esten creadas-->
-<footer class="medium big">
+<footer>
 			<div class="dir resize-big resize-medium rezise-small">
 				<address>
-					webpage en el siguente link:<a href="#heading">Fundacion ecuatoriana construyendo vidas</a><br/>
-					Mz.B villa 1559<br/>
-					Coop. Independiente / La Fragata<br/>
-					Guayaquil / Ecuador 2024®<br/>
+					Fundacion Ecuatoriana construyendo vidas<br/>
+					Parroquia tarqui, sauces 9 Mz. 563 Villa 13<br/>
+					Provincia del Guayas/Guayaquil<br/>
+					Ecuador 2024 ® derechos reservados</br>
 				</address>
 			</div>	
 					<div class="options-footer resize-big resize-medium rezise-small">
 						<a href="pagSala.html">Inicio</a>
 						<a href="#">sobre nosotros</a>
 						<a href="#">Contactanos</a>
-						<a href="#">Galeria</a>
-						<a href="pag-formulario.html">Quieres donar?</a>
+						<a href="pag-galeria.html">Galeria</a>
+						<a href="pag-formulario.html">Deseas Contribuir?</a>
 					</div>
 				<div class="redes resize-big resize-medium">
-			    <img src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-twitter-icon-social-media-vector-png-image_12256686.png"
-href="#" alt="logo equis" class="image3 rezise-small">
-<img src="https://cdn.icon-icons.com/icons2/1995/PNG/512/facebook_internet_media_network_social_icon_123257.png"
-href="#" alt="logo facebook" class="image3 rezise-small">
-					<img src="https://cdn-icons-png.freepik.com/512/2582/2582563.png" href="#" alt="logo youtube" class="image3 rezise-small">
-					<img src="https://cdn-icons-png.freepik.com/512/733/733614.png"
-href="#" alt="logo instagram" class="image3 rezise-small">
-					<img src="https://pngimg.com/uploads/tiktok/tiktok_PNG27.png"
-href="#" alt="logo tiktok" class="image3 rezise-small">
+			    <img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
+					<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
+					<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">
+					<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3 rezise-small">
+					<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3 rezise-small">
 	      </div>
 </footer>
 </body>

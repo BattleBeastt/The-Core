@@ -1,38 +1,43 @@
 body{
-background-color:#d4d3d2;
+background-color:#f7f4ed;
 width:100%;
 height:100vh;
 font-size:18px;
 margin:0;
-color:gray;}
+color:gray;
+}
 #intro{
 padding-top:2%;
 padding-bottom:2%;}
 :root{
 --input-color:#c4ffff;
 --border-color:#45d51c;
---titulo-color:#026c50;
---color-enlace:#80ffff;}
-#title1 {
+--subtitle-color:#20215e;
+--enlaces-color:#12b422;
+}
+#title2 {
 font-size:1.8em;
 text-align:center;
 font-weight:bold;
-color:var(--titulo-color);
+color:var(--subtitle-color);
 margin:8px 0 8px 0;
 padding-top:1%;
 padding-bottom:1%;}
-#title2, #title3 {
+.leyenda, .title3 {
+color:var(--subtitle-color);
 font-size:1.2em;
-margin:5px 0 7px 0;
+margin:7px;
+padding-bottom:8px;
 }
 fieldset {
 border:none;
-border-top:2px solid gray;}
+border-top:2px solid white;
+}
 .registro {
 font-family:Open sans, sans-serif;
-background-color:#80ffff;
+background-color:rgba(128, 255, 255, 0.8);
 width:500px;
-height:850px;
+height:100%;
 margin:0 auto;
 padding-top:5px;
 padding-bottom:10px;
@@ -40,43 +45,45 @@ border:none;
 border-radius:10px;
 margin-bottom:10px;
 }
-.name, .last-name, .correo, .phone, .cedula {
-display:block;
-margin:3px;
-padding:2px;
+#name, #lastName, #correo, #phone, #cedula {
+margin-left:2%;
+margin-top:1%;
+}
+label{
+	margin-left:2%;
 }
 input {
 display:block;
-width:100%;
+width:90%;
 height:30px;
-margin-bottom:10px;
 background:var(--input-color);
 border:none;
 border-radius:5px;
-margin:2px;}
+margin-left:10px;
+margin-top:3px;
+}
 input:focus{
 border:2px solid var(--border-color);
 }
-a:hover{color:var(--color-enlace);}
+a[class="terminos"]:hover{
+color:var(--enlaces-color);
+}
 .pago {
-margin:0;}
-.medio {
+margin:12px;
+}
+.medio, .divisa{
 padding:7px;
-width:130px;
+width:100px;
 background-color:var(--input-color);
 border:none;
-border-radius:5px;}
-#divis {
-margin:0 0 0 35px;}
-.divisa {
-padding:7px;
-background-color:var(--input-color);
-border:none;
-border-radius:5px;}
-.cant {
+border-radius:5px;
+}
+#divis{
+margin-left:15px;
+}
+.cant{
 margin-left:13px;
-padding-top:5px;
-padding-bottom:10px;}
+}
 #valor {
 width:80px;
 display:inline;
@@ -88,15 +95,25 @@ position:relative;
 top:8px;
 }
 .condi {
-margin:0;
+margin-left:3px;
 display:inline;
 font-size:14px;
 }
-.boton {
+#boton {
+font-family:"roboto", sans-serif;
 font-size:1.3rem;
 letter-spacing:1px;
 font-weight:bold;
 margin:0 auto;
 width:200px;
 height:50px;
-background:var(--titulo-color);}
+background:var(--enlaces-color);
+margin-top:3%;
+margin-bottom:3%;
+}
+#boton:hover{
+	background:rgba(255, 255, 255, 0.5);
+}
+input:last-child{
+	margin-top:38px;
+}

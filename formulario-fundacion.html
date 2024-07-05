@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>formulario para donativos</title>
+<link rel="stylesheet" href="form-dona.css">
+</head>
+<body>
+<form id="registro" action="mailto:guayacosfeed@gmail.com" method="post">
+	<legend id="title1">REGISTRO DE DONACION</legend>
+<fieldset id="dt">
+		<legend id="title2">Datos personales </legend>
+<label class="name">Nombres </label><input type="text" placeholder="introduzca sus nombres" required><br/>
+<label class="last-name">Apellidos </label><input type="text" placeholder="introduzca sus apellidos" required ><br/>
+<label class="correo">E-mail </label><input type="email" placeholder="introduzca su correo" required><br/>
+<label class="phone">nº de teléfono </label><input type="text" required placeholder="ingreso su numero de telefono"><br/>
+<label class="cedula">ID o pasaporte </label><input type="text" min="5" max="12" placeholder="introduzca su numero de cedula" required><br/>
+<fieldset id="donacion">
+	<legend id="title3">Donativo</legend>
+	<label class="pago">Medio de Pago</label>
+	<select class="medio">
+	<option>Tarjeta de Crédito</option>
+	<option>Transferencia</option>
+	<option>Débito Bancario</option>
+	</select>
+<label id="divis">Divisa</label>
+<select class="divisa">
+<option>USD</option>    
+<option>EUR</option>    
+<option>JPY</option>    
+<option>GBP</option>
+<option>AUD</option>
+<option>CAD</option>
+<option>CHF</option>
+<option>CNH</option>
+<option>HKD</option>
+<option>NZD</option>    
+</select>
+</fieldset>
+<label for="valor" class="cant">Cantidad </label><input id="valor" type="text" placeholder="e.g. 800" required><br/>
+<input type="checkbox" class="conditions" name="requisito" required><label class="condi"> eh leido y acepto los <a href="#">terminos, condiciones y politicas de privacidad</a> en este formulario</label><br/>
+<input type="checkbox" class="conditions" name="requisito" required><label class="condi">comprendo y acepto toda la informacion proporcionada en este formulario</label>
+<input type="submit" value="DONAR" class="boton" name="requisito">
+</form>
+</body>
+</html>
