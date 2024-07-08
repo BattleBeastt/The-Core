@@ -28,13 +28,13 @@
 <main id="intro">
 <form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
 		<legend id="title2">REGISTRO DE DONACION</legend>
-		<fieldset class="divisor">
-		<legend class="leyenda">Datos personales</legend>
-		<label for="name">Nombres </label><input type="text" id="name" name="name" placeholder="introduzca sus nombres" class="resize-small" required><br/>
-		<label for="lastName">Apellidos </label><input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" class="resize-small" required ><br/>
-		<label for="correo">Correo Electronico </label><input type="email" id="correo" name="email" placeholder="introduzca direccion de correo" class="resize-small" required><br/>
-		<label for="phone">nº de teléfono </label><input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br/>
-		<label for="cedula">ID o pasaporte </label><input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br/>
+		  <fieldset class="divisor">
+			<legend class="leyenda">Datos personales</legend>
+		<label for="name">Nombres </label><input type="text" id="name" name="name" placeholder="introduzca sus nombres" class="resize-small" required><br>
+		<label for="lastName">Apellidos </label><input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" class="resize-small" required ><br>
+		<label for="correo">Correo Electronico </label><input type="email" id="correo" name="email" placeholder="introduzca direccion de correo" class="resize-small" required><br>
+		<label for="phone">nº de teléfono </label><input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br>
+		<label for="cedula">ID o pasaporte </label><input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
 <!--emplear codigo JS para dinamizar los medios de pago-->
 <fieldset class="divisor">
 	<legend class="leyenda">Donativo</legend>
@@ -59,11 +59,11 @@
 				<option>NZD</option>    
 			  </select>
 </fieldset>
-<label for="valor" class="cant">Cantidad a donar</label><input id="valor" name="valor" type="text" placeholder="e.g. 800" required><br/>
-<input type="checkbox" class="conditions" name="requisito" id="politicas" required><label for="politicas"> eh leido y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a>en este formulario</label><br/>
-<input type="checkbox" class="conditions" name="requisito" id="check" required><label for="check">comprendo y acepto toda la informacion proporcionada en este formulario</label>
-<label for="boton"></label>
-<input type="submit" value="Donar" id="boton" name="boton">
+<label for="valor" class="cant">Cantidad a donar</label><input id="valor" name="valor" type="text" placeholder="e.g. 800" required><br>
+<input type="checkbox" name="requisito" id="politicas" required><label for="politicas"> eh leido y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a>en este formulario</label><br>
+<input type="checkbox" name="requisito" id="check" required><label for="check">comprendo y acepto toda la informacion proporcionada en este formulario</label><br>
+<label for="boton"></label><br>
+<button type="submit" id="boton" name="button" accesskey="e">Donar</button>
 </form>
 </main>
 	<!--agregar enlaces en los links, cuando todas las paginas esten creadas-->

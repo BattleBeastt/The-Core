@@ -28,14 +28,14 @@
 	<main id="intro">
 			<h2 class="subtitle2">Envianos tu consulta</h2>
 				<form class="registro resize-small" action="mailto:sandramontenegrolainez@gmail.com" method="post">
-					<label  for="name">Nombres </label><input type="text" id="name" placeholder="introduzca sus nombres">
-					<label for="last-name">Apellidos </label><input type="text" id="last-name" placeholder="introduzca sus apellidos">
-					<label class="correo" for="email">Correo Electronico </label><input type="email" id="email" placeholder="introduzca direccion de correo">
-					<label  for= "asunto">Asunto: </label><input type="texto" id="asunto">
-					<label for="comentario">Escriba su requerimiento</label>
+					<label  for="name">Nombres </label><input type="text" id="name" placeholder="introduzca sus nombres" required><br>
+					<label for="last-name">Apellidos </label><input type="text" id="lastName" placeholder="introduzca sus apellidos" required><br>
+					<label class="correo" for="correo">Correo Electronico </label><input type="email" id="correo" placeholder="introduzca direccion de correo" required><br>
+					<label  for= "asunto">Asunto: </label><input type="texto" id="asunto"><br>
+					<label for="comentario" class="cajacomentario">Escriba su requerimiento: </label><br>
 					<textarea id="comentario" rows="8" cols="30" name="comentario"  placeholder="describa su consulta..."></textarea>
-					<label for="boton"></label>
-					<input type="submit" id="boton" value="Enviar" name="boton">
+					<label for="boton"></label><br>
+					<button type="submit" id="boton" name="button" accesskey="e" >Enviar</button>
 				</form>
 	</main>
 	<footer>
