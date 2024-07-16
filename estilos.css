@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Spice&display=swap');
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	background-color:#a2c4f8;
+	font-family:"Acme", sans-serif;
+}
+:root{
+	--color-bg:#4ba51d;
+	--color-boton:#3358f8;
+}
+header{
+	background:var(--color-bg);
+	display:flex;
+	justify-content:space-between;
+	border-radius:20px;
+	align-items:center;
+	margin-bottom:10px;
+	padding:.5% 0 .5% 0;
+}
+#logo{
+	width:100%;
+	border-radius:6px;
+	margin-left:1%;
+}
+#conditions{
+	width:50%;
+	font-size:0.9em;
+	background:#f89d1a;
+	border-radius:10px;
+	padding:.5% 0 .5% 1%;
+}
+main{
+	float:left;
+	width:60%;
+	margin-left:10px ;
+}
+h1{
+	margin:0;
+	font-family:"Bungee Spice", sans-serif;
+}
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+}
+.rules li{
+	color:#d12f01;
+}
+aside{
+	float:right;
+	width:30%;
+}
+button{
+	width:180px;
+	height:40px;
+	border:none;
+	border-radius:10px;
+	background:var(--color-boton);
+	color:#ffffff;
+	font-weight:bold;
+}
+.boton{
+	margin:5px 0 10px 0;
+}
+footer{
+	background:var(--color-bg);
+	clear:left;
+	width:100%;
+	border-radius:10px;
+	padding:5px 0 5px 0;
+}
+#creador{
+	margin-left:10px ;
+}
+.texto-cifrado{
+	border:1px solid gray;
+	border-radius:20px;
+}
