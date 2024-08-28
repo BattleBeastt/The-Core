@@ -1,106 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-* {
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-font-family:Open sans, sans-serif;
-box-sizing:border-box;
-font-size:18px;
+	background-color:var(--bg-main);
+	font-family:Open sans, sans-serif;
+	box-sizing:border-box;
+	font-size:18px;
+	margin:0;
+	padding:0;
 }
 :root{
---bg-color1:#20215e;
---h-color:#38b6d0;
---h-color2:#bb0901;
---white-color:#f2f2f2;
---bg-color3:#e4e7eb;
---bg-color4:#4095e1;
+	--bg-main:#8bffff;
+	--bg-color1:#20215e;
+	--h-color:#38b6d0;
+	--h-color2:#bb0901;
+	--white-color:#f2f2f2;
+	--bg-color3:#e4e7eb;
+	--bg-color4:#4095e1;
 }
-* p {
-font-family:Arsenal bold, serif;
-font-size:18px;
-font-weight:400;
-font-style:normal;
-text-align:justify;
+p{
+	font-family:notoSerif, serif;
+	font-size:1.3rem;
+	font-style:normal;
+	text-align:justify;
+	color:#333333;
 }
 header{
-width:100%;
-display:flex;
-justify-content:space-between;
-alig-items:center;
-background-color: var(--bg-color1);
-padding-bottom:1%;
-padding-top:1%;
+	background-color:var(--bg-color1) ;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-bottom:.5%;
+	padding-top:.5%;
+	opacity:0.8;
+	border-radius:10px;
 }
-.logo-abb{
+.logo-name{
 	display:inherit;
-	gap:10px;
+	gap:12px;
+	z-index:2;
 }
-.logo {
-width:130px;
-padding:1% 0 1% 0;
-border-radius:48%;
-margin-left:8px;
+.logoFundacion{
+	width:16%;
+	border-radius:48%;
+	margin-left:1%;
 }
-#name-empresa{
-flex-direction:column;
-alig-items:center;
-color:var(--white-color);
-font-size:2em;
-font-family:Open sans, sans-serif;
-padding-top:1.5%;
+h1{
+	align-items:center;
+	color:var(--white-color);
+	font-size:2em;
+	font-family:Open sans, sans-serif;
+	z-index:2;
 }
-#title2{
-color:var(--h-color2);
-font-size:1.7em;
-font-family:Open sans, sans-serif;
-padding:5px;
-text-align:center;
-padding-bottom:1%;
-padding-top:1%;
+.title2{
+	color:var(--bg-color1);
+	font-size:2em;
+	font-family:"Quicksand", sans-serif;
+	padding:5px;
+	text-align:center;
+	padding-bottom:1%;
+	padding-top:1%;
 }
 nav{
-display:flex;
-justify-content:space-around;
-align-items:center;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	z-index:2;
 }
 a{
-color:var(--white-color);
-text-decoration:none;
-padding:3px;
-margin:2px;
+	color:var(--white-color);
+	padding:2px;
+	margin:0 4px 0 4px;
+	text-decoration:none;
 }
 a:hover{
-color: var(--h-color);}
-ul{
-display:flex;
-justify-content:center;
-list-style-type:none;
+	color: var(--h-color);
 }
-li{
-margin:7px;
-border-right:2px solid var(--h-color);
-font-weight:bold;
+ul, li{
+	display:flex;
+	justify-content:center;
+	font-weight:bold;
+	border-right:2px solid var(--h-color);
+	list-style-type:none;
 }
 #mision, #vision {
-background-color:var(--bg-color4);
-height:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+	height:90%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
 }
-.subtitle2{
-color:var(--h-color2);
-font-size:2rem;
-font-style:italic;
-font-family:roboto, sans-serif;
-text-align:center;
-width:100%;
-padding:15px 0 15px 0;
-margin:0 10px 0 0;
-}
-.subtitle3 {
+
+.title3 {
 color:var(--white-color);
 text-align:center;
 width:200px;
@@ -109,14 +101,15 @@ width:200px;
 text-align:center;
 }
 .content{
-margin:0 10px 0 10px;
-text-align:center;
+	width:60%;
+	margin:0 1% 0 1%;
+	text-align:center;
 }
 .image1{
 width:100%;
-height:90vh;
 max-width:auto;
 border-radius:2%;
+opacity:0.9;
 }
 .image2{
 width:200px;
@@ -167,8 +160,8 @@ margin:0 auto;
 #servicios{
 background-color:var(--bg-color4);
 display:flex;
-flex-direction:column;
 justify-content:space-evenly;
+width:100%;
 height:100%;
 padding-top:2%;
 padding-bottom:2%;
@@ -218,31 +211,4 @@ margin-left:8%;
 	width:150px;
 	border-radius:3%;
 	border:1px solid #38b6d0;
-}
-main .fundadores .flecha-izquierda,
-main .fundadores .flecha-derecha{
-	position: absolute;
-  border: none;
-  background: rgb(0, 0, 0, 0.3);
-  font-size: 40px;
-  height: 50%;
-  top: calc(50% - 25%);
-  line-height: 40px;
-  width: 50px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 4;
-  transition: .2s ease all;
-}
-main .fundadores .flecha-izquierda:hover{
-	background:rgba(0,0,0,0.9);
-}
-main .fundadores .flecha-izquierda{
-left:0;
-}
-main .fundadores .flecha-derecha{
-right:0;
-}
-main .fundadores .flecha-derecha:hover{
-background:rgba(0,0,0,0.9);
 }
