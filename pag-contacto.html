@@ -10,58 +10,63 @@
 <link rel="stylesheet" href="size-middle.css" media="screen and (min-width:481px) and (max-width:980px)">
 <link rel="stylesheet" href="size-tiny.css" media="screen and (max-width:480px)">
 </head>
-<body>
-	<header class="medium small">
-		 <div class="logo-abb">
-		 <img src="fecv.jpg" alt="logo de Fundacion" class="logo">
-		 <h1 id="name-empresa" class="big medium">FECV</h1>
-		 </div>
-	 <nav>
-	   <ul>
-		<li><a href="pagSala.html" class="big" target="_blank">Inicio</a></li>
-		<li><a href="#" class="big" target="_blank">Contactanos</a></li>
-		<li><a href="pag-galeria.html" class="big" target="_blank">Galeria</a></li>
-		<li><a href="pag-formulario.html" class="big" target="_blank">Contribuir</a></li>
-	   </ul>
-	 </nav>
-	</header>
-	<main id="intro">
-			<h2 class="subtitle2">Envianos tu consulta</h2>
+	<body>
+		<header class="medium small">
+			<div class="logo-name">
+				<img src="galeria\fecv.jpg" alt="logo de Fundacion" class="logoFundacion">
+				<h1 id="name-empresa" class="big medium">FECV</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="pagSala.html" class="big" target="_blank">Inicio</a></li>
+					<li><a href="#" class="big" target="_blank">Contactanos</a></li>
+					<li><a href="pag-galeria.html" class="big" target="_blank">Galeria</a></li>
+					<li><a href="pag-formulario.html" class="big" target="_blank">Contribuir</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="intro">
+				<h2 class="title2">contactos</h2>
 				<form class="registro resize-small" action="mailto:sandramontenegrolainez@gmail.com" method="post">
-					<label  for="name">Nombres </label><input type="text" id="name" placeholder="introduzca sus nombres" required><br>
-					<label for="last-name">Apellidos </label><input type="text" id="lastName" placeholder="introduzca sus apellidos" required><br>
-					<label class="correo" for="correo">Correo Electronico </label><input type="email" id="correo" placeholder="introduzca direccion de correo" required><br>
-					<label  for= "asunto">Asunto: </label><input type="texto" id="asunto"><br>
-					<label for="comentario" class="cajacomentario">Escriba su requerimiento: </label><br>
-					<textarea id="comentario" rows="8" cols="30" name="comentario"  placeholder="describa su consulta..."></textarea>
-					<label for="boton"></label><br>
-					<button type="submit" id="boton" name="button" accesskey="e" >Enviar</button>
+					<label  for="name">Nombres </label>
+					<input type="text" id="name" placeholder="introduzca sus nombres" required>
+					<label for="last-name">Apellidos </label>
+					<input type="text" id="lastName" placeholder="introduzca sus apellidos" required>
+					<label class="correo" for="correo">Correo Electronico </label>
+					<input type="email" id="correo" placeholder="introduzca direccion de e-mail" required>
+					<label  for= "telefono">teléfono </label>
+					<input type="text" id="telefono" name="telefono" pattern="[0-9]+">
+					<h4 class="title4" align="center">¿En qué te ayudamos?</h4>
+					<textarea id="coment" rows="10" cols="44" name="coment"  placeholder="escriba aquí su consulta..." required></textarea>
+					<label for="boton"></label>
+					<button type="submit" id="btn" name="boton" accesskey="enter" >Enviar</button>
 				</form>
-	</main>
-	<footer>
-			<div class="dir resize-big resize-medium rezise-small">
-				<address>
-					Fundacion Ecuatoriana construyendo vidas<br/>
-					Parroquia tarqui, sauces 9 Mz. 563 Villa 13<br/>
-					Provincia del Guayas/Guayaquil<br/>
-					Ecuador 2024 ® derechos reservados</br>
-				</address>
-			</div>	
-					<div class="options-footer resize-big resize-medium rezise-small">
-						<a href="pagSala.html">Inicio</a>
-						<a href="#">sobre nosotros</a>
-						<a href="#">Contactanos</a>
-						<a href="pag-galeria.html">Galeria</a>
-						<a href="pag-formulario.html">Deseas Contribuir?</a>
-					</div>
-				<div class="redes resize-big resize-medium">
-			    <img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
-					<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
-					<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">
-					<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3 rezise-small">
-					<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3 rezise-small">
-	      </div>
-	</footer>
-	<!-- <script refer src="animaciones.js"></script> -->
-</body>
+		</main>
+		<footer>
+				<div class="dir resize-big resize-medium rezise-small">
+					<address>
+						Fundacion Ecuatoriana construyendo vidas<br/>
+						coop. independiente mz.A villa 16<br/>
+						cuidad Guayaquil - Ecuador<br/>
+						todos los derechos reservados</br>
+						2024 - 2025®</br>
+					</address>
+				</div>	
+						<div class="options-footer resize-big resize-medium rezise-small">
+							<a href="pagSala.html">Inicio</a>
+							<a href="#">sobre nosotros</a>
+							<a href="#">Contactanos</a>
+							<a href="pag-galeria.html">Galeria</a>
+							<a href="pag-formulario.html">Deseas Contribuir?</a>
+						</div>
+					<div class="redes resize-big resize-medium">
+					<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
+						<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
+						<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">
+						<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3 rezise-small">
+						<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3 rezise-small">
+			</div>
+		</footer>
+		<!-- <script refer src="animaciones.js"></script> -->
+	</body>
 </html>

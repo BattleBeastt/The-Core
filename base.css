@@ -32,10 +32,9 @@ header{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	padding-bottom:.5%;
-	padding-top:.5%;
+	padding:.5% 0 .5% 0;
 	opacity:0.8;
-	border-radius:10px;
+	border-radius:5px;
 }
 .logo-name{
 	display:inherit;
@@ -91,7 +90,6 @@ ul, li{
 	justify-content:space-between;
 	align-items:center;
 }
-
 .title3 {
 color:var(--white-color);
 text-align:center;

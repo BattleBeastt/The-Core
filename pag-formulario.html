@@ -25,46 +25,55 @@
 	   </ul>
 	  </nav>
 	</header>
-<main id="intro">
-<form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
-		<legend id="title2">REGISTRO DE DONACION</legend>
-		  <fieldset class="divisor">
-			<legend class="leyenda">Datos personales</legend>
-		<label for="name">Nombres </label><input type="text" id="name" name="name" placeholder="introduzca sus nombres" class="resize-small" required><br>
-		<label for="lastName">Apellidos </label><input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" class="resize-small" required ><br>
-		<label for="correo">Correo Electronico </label><input type="email" id="correo" name="email" placeholder="introduzca direccion de correo" class="resize-small" required><br>
-		<label for="phone">nº de teléfono </label><input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br>
-		<label for="cedula">ID o pasaporte </label><input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
+	<main id="intro">
+		<form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
+			end id="title2">REGISTRO DE DONACION</legend>
+			<fieldset class="divisor">
+				<legend class="leyenda">Datos personales</legend>
+					<label for="name">Nombres </label>
+					<input type="text" id="name" name="name" placeholder="introduzca sus nombres" class="resize-small" required><br>
+					<label for="lastName">Apellidos </label>
+					<input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" class="resize-small" required ><br>
+					<label for="correo">Correo Electronico </label>
+					<input type="email" id="correo" name="email" placeholder="introduzca direccion de correo" class="resize-small" required><br>
+					<label for="phone">nº de teléfono </label>
+					<input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br>
+					<label for="cedula">ID o pasaporte </label>
+					<input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
+			</fieldset>
 <!--emplear codigo JS para dinamizar los medios de pago-->
-<fieldset class="divisor">
-	<legend class="leyenda">Donativo</legend>
-		<label for="pago">Medio de pago</label>
-		<select id="medio">
-			<option>Tarjeta de Crédito</option>
-			<option>Transferencia</option>
-			<option>Débito Bancario</option>
-		 </select>
+			<fieldset class="divisor">
+				<legend class="leyenda">Donativo</legend>
+					<label for="pago">Medio de pago</label>
+						<select id="medio">
+							<option>Tarjeta de Crédito</option>
+							<option>Transferencia</option>
+							<option>Débito Bancario</option>
+						</select>
 <!-- emplear codigo JS para reducir esta seccion-->
 			<label for="divisa">Divisa</label>
-			  <select id="divisa" name="divisa">
-				<option>USD</option>    
-				<option>EUR</option>    
-				<option>JPY</option>    
-				<option>GBP</option>
-				<option>AUD</option>
-				<option>CAD</option>
-				<option>CHF</option>
-				<option>CNH</option>
-				<option>HKD</option>
-				<option>NZD</option>    
-			  </select>
-</fieldset>
-<label for="valor" class="cant">Cantidad a donar</label><input id="valor" name="valor" type="text" placeholder="e.g. 800" required><br>
-<input type="checkbox" name="requisito" id="politicas" required><label for="politicas"> eh leido y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a>en este formulario</label><br>
-<input type="checkbox" name="requisito" id="check" required><label for="check">comprendo y acepto toda la informacion proporcionada en este formulario</label><br>
-<label for="boton"></label><br>
-<button type="submit" id="boton" name="button" accesskey="e">Donar</button>
-</form>
+				<select id="divisa" name="divisa">
+						<option>USD</option>    
+						<option>EUR</option>    
+						<option>JPY</option>    
+						<option>GBP</option>
+						<option>AUD</option>
+						<option>CAD</option>
+						<option>CHF</option>
+						<option>CNH</option>
+						<option>HKD</option>
+						<option>NZD</option>    
+				</select>
+			</fieldset>
+					<label for="valor" class="cant">Cantidad a donar</label>
+					<input id="valor" name="valor" type="text" placeholder="e.g. 800" required><br>
+					<input type="checkbox" name="requisito" id="politicas" required>
+					<label for="politicas"> eh leido y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a>en este formulario</label><br>
+					<input type="checkbox" name="requisito" id="check" required>
+					<label for="check">comprendo y acepto toda la informacion proporcionada en este formulario</label><br>
+					<label for="boton"></label><br>
+				<button type="submit" id="btn" name="boton" accesskey="enter">Donar</button>
+	</form>
 </main>
 	<!--agregar enlaces en los links, cuando todas las paginas esten creadas-->
 <footer>
@@ -84,12 +93,12 @@
 						<a href="pag-formulario.html">Deseas Contribuir?</a>
 					</div>
 				<div class="redes resize-big resize-medium">
-			    <img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
+					<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
 					<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
 					<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">
 					<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3 rezise-small">
 					<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3 rezise-small">
-	      </div>
+				</div>
 </footer>
 </body>
 </html>
