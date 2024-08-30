@@ -1,21 +1,21 @@
 :root{
 	--input-color:#fff;
-	--border-color:#45d51c;
+	--color-cajas:#c4ffff;
 	--subtitle-color:#20215e;
 	--enlaces-color:#48c335;
 }
 .leyenda, .title3, .title4{
 	color:var(--subtitle-color);
 	font-size:1.2em;
-	margin:7px;
-	padding-bottom:8px;
+	margin:1%;
+	padding-bottom:1%;
 }
 .title4{
-	margin-top:2%;
+	margin-top:3%;
 }
 form{
 	font-family:Open sans, sans-serif;
-	background-color:#c4ffff;
+	background-color:var(--color-cajas);
 	color:#333333;
 	width:450px;
 	height:100%;
@@ -26,7 +26,9 @@ form{
 	margin-bottom:10px;
 }
 form label{
-	margin:0 0 5% 7%;
+	font-size:1.3rem;
+	margin:7%;
+	margin-bottom:2%;
 	color:var(--subtitle-color) ;
 }
 input{
@@ -34,7 +36,6 @@ input{
 	width:80%;
 	height:30px;
 	background:var(--input-color);
-	margin-left:6%;
 	font-size:16px;
 	border:none;
 	border-radius:10px;
@@ -47,28 +48,25 @@ textarea{
 	border-radius:10px;
 	font-size:19px;
 }
-input:focus{
-border:2px solid var(--border-color);
-}
 a[class="terminos"]:hover{
-color:var(--enlaces-color);
+	color:var(--enlaces-color);
 }
 .pago {
-margin:12px;
+	margin:12px;
 }
 #medio, #divisa{
-padding:7px;
-width:100px;
-background-color:var(--input-color);
-border:none;
-border-radius:5px;
+	padding:7px;
+	width:100px;
+	background-color:var(--input-color);
+	border:none;
+	border-radius:5px;
 }
 .cant{
-margin-left:2%;
+	margin-left:2%;
 }
 #valor {
-width:80px;
-display:inline;
+	width:80px;
+	display:inline;
 }
 #politicas, #check{
 	width:18px;
@@ -102,4 +100,13 @@ button{
 }
 button:default{
 	box-shadow:2px 2px 3px 2px black;
+}
+#infoContato{
+	width:50%;
+	margin:1% 25% 1% 25%;
+	background-color:var(--color-cajas) ;
+	border-radius:10px;
+}
+.info, #infoContato{
+	text-align:center;
 }

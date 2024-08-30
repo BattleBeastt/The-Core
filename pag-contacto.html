@@ -19,7 +19,7 @@
 			<nav>
 				<ul>
 					<li><a href="pagSala.html" class="big" target="_blank">Inicio</a></li>
-					<li><a href="#" class="big" target="_blank">Contactanos</a></li>
+					<li><a href="pag-contacto.html" class="big" target="_blank">Contactanos</a></li>
 					<li><a href="pag-galeria.html" class="big" target="_blank">Galeria</a></li>
 					<li><a href="pag-formulario.html" class="big" target="_blank">Contribuir</a></li>
 				</ul>
@@ -29,11 +29,11 @@
 				<h2 class="title2">Envianos tu solicitud</h2>
 				<form class="registro resize-small" action="mailto:sandramontenegrolainez@gmail.com" method="post">
 					<label  for="name">Nombres </label>
-					<input type="text" id="name" placeholder="introduzca sus nombres" required>
+					<input type="text" id="name" placeholder="introduzca sus nombres" required></br>
 					<label for="last-name">Apellidos </label>
-					<input type="text" id="lastName" placeholder="introduzca sus apellidos" required>
+					<input type="text" id="lastName" placeholder="introduzca sus apellidos" required></br>
 					<label class="correo" for="correo">Correo Electronico </label>
-					<input type="email" id="correo" placeholder="introduzca direccion de e-mail" required>
+					<input type="email" id="correo" placeholder="introduzca direccion de e-mail" required></br>
 					<label  for= "telefono">teléfono </label>
 					<input type="text" id="telefono" name="telefono" pattern="[0-9]+">
 					<h4 class="title4" align="center">¿En qué te ayudamos?</h4>
@@ -41,9 +41,14 @@
 					<label for="boton">
 					<button type="submit" id="btn" name="boton" accesskey="enter">Enviar</button></label>
 				</form>
+				<section id="infoContato">
+					<p class="info">tambien puedes contactarnos a nuestra oficina: </p><span><em>0912345678 - (04)1234578</em></span>
+					<p class="info">o escribirnos un correo electronico mas detallado, a la direccion: </p><span><em>sandramontenegrolainez@gmail.com</em></span>
+					<p class="info"><i>estaremos gustosos de atenderte!</i></p>
+				</section>
 		</main>
 		<footer>
-				<div class="dir resize-big resize-medium rezise-small">
+				<div id="direccion" class="resize-big resize-medium rezise-small">
 					<address>
 						Fundacion Ecuatoriana construyendo vidas<br/>
 						coop. independiente mz.A villa 16<br/>
@@ -52,14 +57,14 @@
 						2024 - 2025®</br>
 					</address>
 				</div>	
-						<div class="options-footer resize-big resize-medium rezise-small">
+						<div id="enlacesFooter" class="resize-big resize-medium rezise-small">
 							<a href="pagSala.html">Inicio</a>
 							<a href="#">sobre nosotros</a>
-							<a href="#">Contactanos</a>
+							<a href="pag-contacto.html">Contactanos</a>
 							<a href="pag-galeria.html">Galeria</a>
 							<a href="pag-formulario.html">Deseas Contribuir?</a>
 						</div>
-					<div class="redes resize-big resize-medium">
+					<div id="socialMedias" class="resize-big resize-medium">
 					<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
 						<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
 						<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">

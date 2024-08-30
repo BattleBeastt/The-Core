@@ -16,11 +16,11 @@ body{
 	--h-color:#38b6d0;
 	--h-color2:#bb0901;
 	--white-color:#f2f2f2;
-	--bg-color3:#e4e7eb;
+	--bg-color3:#cdffff;
 	--bg-color4:#4095e1;
 }
 p{
-	font-family:notoSerif, serif;
+	font-family:"noto-Serif", serif;
 	font-size:1.3rem;
 	font-style:normal;
 	text-align:justify;
@@ -51,15 +51,12 @@ h1{
 	color:var(--white-color);
 	font-size:2em;
 	font-family:Open sans, sans-serif;
-	z-index:2;
 }
 .title2{
 	color:var(--bg-color1);
 	font-size:2em;
 	font-family:"Quicksand", sans-serif;
 	text-align:center;
-	padding-bottom:1%;
-	padding-top:1%;
 }
 nav{
 	display:flex;
@@ -90,13 +87,11 @@ ul, li{
 	align-items:center;
 }
 .title3 {
-color:var(--white-color);
-text-align:center;
-width:200px;
+	color:var(--white-color);
+	text-align:center;
+	width:200px;
 }
-.subtitle4{
-text-align:center;
-}
+
 .content{
 	width:60%;
 	margin:0 1% 0 1%;
@@ -126,10 +121,9 @@ text-align:center;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	background:var(--bg-color3);
+	background:var(--bg-color4);
 	height:500px;
-	padding-top:2%;
-	padding-bottom:1%;
+	margin:3% 0 1% 0;
 }
 .socios {
 	display:flex;
@@ -144,13 +138,12 @@ text-align:center;
 	height:400px;
 	margin:0 auto;
 }
-#video-ilustrativo{
-	background-color:var(--bg-color3);
+#seccionVideo{
 	display:flex;
 	padding-top:3%;
 	padding-bottom:4%;
 }
-.video{
+#video{
 	margin:0 auto;
 }
 #servicios{
@@ -167,28 +160,25 @@ footer{
 	color:white;
 	background-color:var(--bg-color1);
 	display:flex;
+	justify-content:space-evenly;
 	align-items:center;
 	padding-top:1%;
 	padding-bottom:1%;
 	opacity:0.9;
 }
-.dir{
+#direccion{
 	width:100%;
 	height:100%;
-	border-right:1px solid var(--h-color);
 	padding-top:2%;
 	margin-left:2%;
 	font-size:14px;
 }
-.options-footer{
+#enlacesFooter{
 	width:100%;
 	height:100%;
-	display:flex;
-	flex-direction:column;
-	border-right:1px solid var(--h-color);
 	margin-left:5%;
 }
-.redes{
+#socialMedias{
 	justify-content:space-evenly;
 	flex-direction:column;
 	width:100%;
