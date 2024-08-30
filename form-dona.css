@@ -2,19 +2,22 @@
 	--input-color:#fff;
 	--border-color:#45d51c;
 	--subtitle-color:#20215e;
-	--enlaces-color:#12b422;
+	--enlaces-color:#48c335;
 }
-.leyenda, .title3, .title4 {
+.leyenda, .title3, .title4{
 	color:var(--subtitle-color);
 	font-size:1.2em;
 	margin:7px;
 	padding-bottom:8px;
 }
+.title4{
+	margin-top:2%;
+}
 form{
 	font-family:Open sans, sans-serif;
 	background-color:#c4ffff;
 	color:#333333;
-	width:500px;
+	width:450px;
 	height:100%;
 	margin:0 auto;
 	padding-bottom:1%;
@@ -23,19 +26,19 @@ form{
 	margin-bottom:10px;
 }
 form label{
-	margin-left:3%;
+	margin:0 0 5% 7%;
 	color:var(--subtitle-color) ;
 }
 input{
 	display:block;
-	width:90%;
+	width:80%;
 	height:30px;
 	background:var(--input-color);
-	margin-left:10px;
+	margin-left:6%;
 	font-size:16px;
 	border:none;
 	border-radius:10px;
-	margin-left:2%;
+	margin-left:7%;
 }
 textarea{
 	margin-top:1%;
@@ -79,7 +82,7 @@ display:inline;
 	font-size:14px;
 }
 button{
-	background:var(--enlaces-color);
+	background-color:var(--enlaces-color) ;
 	font-family:"roboto", sans-serif;
 	font-size:1.3rem;
 	font-weight:bold;
@@ -98,9 +101,5 @@ button{
 	color:black;
 }
 button:default{
-	box-shadow:2px 2px 5px 1px black;
-}
-
-.title4{
-	margin-top:2%;
+	box-shadow:2px 2px 3px 2px black;
 }
