@@ -12,4 +12,8 @@ border:none !important;
 display:inline !important;
 }
 .redes{
-position:fixed;}
+position:fixed;
+}
+.logoFundacion{
+	width:25%;
+}

@@ -72,12 +72,12 @@ a{
 }
 a:hover{
 	color: var(--h-color);
+	text-decoration: underline;
 }
 ul, li{
 	display:flex;
 	justify-content:center;
 	font-weight:bold;
-	border-right:2px solid var(--h-color);
 	list-style-type:none;
 }
 #mision, #vision {
@@ -90,8 +90,14 @@ ul, li{
 	color:var(--white-color);
 	text-align:center;
 	width:200px;
+	font-family:"Quicksand", sans-serif;
+	text-align:center;
 }
-
+.title4{
+	color:var(--bg-color1);
+	font-family:"Quicksand", sans-serif;
+	text-align:center;
+}
 .content{
 	width:60%;
 	margin:0 1% 0 1%;

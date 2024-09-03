@@ -1,17 +1,8 @@
 :root{
 	--input-color:#fff;
 	--color-cajas:#c4ffff;
-	--subtitle-color:#20215e;
+	--text-color:#20215e;
 	--enlaces-color:#48c335;
-}
-.leyenda, .title3, .title4{
-	color:var(--subtitle-color);
-	font-size:1.2em;
-	margin:1%;
-	padding-bottom:1%;
-}
-.title4{
-	margin-top:3%;
 }
 form{
 	font-family:Open sans, sans-serif;
@@ -29,7 +20,7 @@ form label{
 	font-size:1.3rem;
 	margin:7%;
 	margin-bottom:2%;
-	color:var(--subtitle-color) ;
+	color:var(--text-color) ;
 }
 input{
 	display:block;
@@ -60,9 +51,6 @@ a[class="terminos"]:hover{
 	background-color:var(--input-color);
 	border:none;
 	border-radius:5px;
-}
-.cant{
-	margin-left:2%;
 }
 #valor {
 	width:80px;
@@ -102,11 +90,36 @@ button:default{
 	box-shadow:2px 2px 3px 2px black;
 }
 #infoContato{
-	width:50%;
-	margin:1% 25% 1% 25%;
+	width:80%;
+	margin:0 auto;
 	background-color:var(--color-cajas) ;
 	border-radius:10px;
 }
 .info, #infoContato{
 	text-align:center;
+}
+legend{
+	font-size:1.4rem;
+	color:gray;
+}
+fieldset{
+	border:none;
+	border-top:2px solid gray;
+}
+label[class="condiciones"]{
+	margin-left:2%;
+	letter-spacing:1px;
+}
+input[class="casilla"]{
+	margin:.5% 0 .5% 2%;
+}
+a[class="terminos"]{
+	color:blue;
+	letter-spacing:1px;
+}
+label[class="cant"]{
+	margin:2%;
+}
+select{
+	margin:1.5%;
 }

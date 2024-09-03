@@ -26,8 +26,8 @@
 	  </nav>
 	</header>
 	<main id="intro">
+		<h2 class="title2">REGISTRO DE DONACION</h2>
 		<form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
-			<legend>REGISTRO DE DONACION</legend>
 			<fieldset class="divisor">
 				<legend class="leyenda">Datos personales</legend>
 					<label for="name">Nombres </label>
@@ -44,33 +44,33 @@
 <!--emplear codigo JS para dinamizar los medios de pago-->
 			<fieldset class="divisor">
 				<legend class="leyenda">Donativo</legend>
-					<label for="pago">Medio de pago</label>
-						<select id="medio">
-							<option>Tarjeta de Crédito</option>
-							<option>Transferencia</option>
-							<option>Débito Bancario</option>
-						</select>
+				<label for="pago" class="cant">Medio de pago</label>
+				<select id="medio">
+					<option>Tarjeta de Crédito</option>
+					<option>Transferencia</option>
+					<option>Débito Bancario</option>
+				</select></br>
 <!-- emplear codigo JS para reducir esta seccion-->
-			<label for="divisa">Divisa</label>
+				<label for="divisa" class="cant">Divisa</label>
 				<select id="divisa" name="divisa">
-						<option>USD</option>    
-						<option>EUR</option>    
-						<option>JPY</option>    
-						<option>GBP</option>
-						<option>AUD</option>
-						<option>CAD</option>
-						<option>CHF</option>
-						<option>CNH</option>
-						<option>HKD</option>
-						<option>NZD</option>    
-				</select>
+					<option>USD</option>    
+					<option>EUR</option>    
+					<option>JPY</option>    
+					<option>GBP</option>
+					<option>AUD</option>
+					<option>CAD</option>
+					<option>CHF</option>
+					<option>CNH</option>
+					<option>HKD</option>
+					<option>NZD</option>    
+				</select></br>
+				<label for="valor" class="cant">valor a donar</label>
+				<input id="valor" name="valor" type="text" placeholder="e.g. 800" required>
 			</fieldset>
-					<label for="valor" class="cant">valor a donar</label>
-					<input id="valor" name="valor" type="text" placeholder="e.g. 800" required>
-					<input type="checkbox" name="requisito" id="politicas" required>
-					<label for="politicas"> comprendo y acepto todos los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a></label>
-					<input type="checkbox" name="requisito" id="check" required>
-					<label for="check">acepto que toda la informacion proporcionada en este formulario es veraz</label>
+					<input type="checkbox" name="requisito" id="politicas" class="casilla" required>
+					<label for="politicas" class="condiciones"> comprendo y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a></label></br>
+					<input type="checkbox" name="requisito" id="check" class="casilla" required>
+					<label for="check" class="condiciones">acepto que toda la informacion proporcionada en este formulario es veraz</label></br>
 					<label for="boton">
 					<button type="submit" id="btn" name="boton" accesskey="enter">Donar</button></label>
 		</form>
