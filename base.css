@@ -26,6 +26,9 @@ p{
 	text-align:justify;
 	color:#333333;
 }
+.text2{
+	margin:0;
+}
 header{
 	background-color:var(--bg-color1) ;
 	width:100%;
@@ -91,7 +94,6 @@ ul, li{
 	text-align:center;
 	width:200px;
 	font-family:"Quicksand", sans-serif;
-	text-align:center;
 }
 .title4{
 	color:var(--bg-color1);
@@ -126,10 +128,19 @@ ul, li{
 #fundadores{
 	display:flex;
 	flex-direction:column;
-	justify-content:center;
+	justify-content:space-between;
 	background:var(--bg-color4);
-	height:500px;
-	margin:3% 0 1% 0;
+	margin:2% 0 1% 0;
+	height:100%;
+	padding-bottom:1%;
+}
+.color-word{
+	text-align:center;
+	color:white;
+	margin:1.5%;
+}
+section .cajaSubtitulo{
+		display:inline-block;	
 }
 .socios {
 	display:flex;
@@ -137,7 +148,7 @@ ul, li{
 }
 .lider {
 	display:flex;
-	justify-content:space-evenly;
+	justify-content:space-between;
 	flex-direction:column;
 	align-content:center;
 	width:250px;
@@ -156,10 +167,16 @@ ul, li{
 	background-color:var(--bg-color4);
 	display:flex;
 	justify-content:space-evenly;
+	flex-direction:column;
 	width:100%;
 	height:100%;
 	padding-top:2%;
 	padding-bottom:2%;
+}
+ section .especialidad{
+	display:inline;
+	align-content:center;
+	width:16%;
 }
 footer{
 	width:100%;
