@@ -6,10 +6,10 @@ text-align:center;
 width:100%;
 font-family:arial;
 }
-.resize-small {
-font-family:helvetica, serif;
-width:95%;
-font-size:0.8em;
+.rezise-small {
+	display:block;
+	font-family:helvetica, serif;
+	font-size:0.8em;
 }
 .image1{
 	width:50%;
