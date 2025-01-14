@@ -1,19 +1,21 @@
 .small {
-display: inherit !important;
-flex-direction:column;
-font-size:1em;
-text-align:center;
-width:100%;
-font-family:arial;
+	display: inherit;
+	flex-direction:column;
+	font-size:1em;
+	text-align:center;
+	width:100%;
+	font-family: Helvetica, sans-serif;
 }
 .rezise-small {
-	display:block;
-	font-family:helvetica, serif;
-	font-size:0.8em;
+	display:inline-block !important;
+	font-size:0.6em;
 }
-.image1{
-	width:50%;
-	height:100%;
+.logoFundacion{
+	width:35%;	
+}
+.image2{
+	width:100%;
+	height:25%;
 }
 #mision{
 	padding-top:4%;
@@ -23,19 +25,37 @@ font-family:arial;
 	flex-direction:column;
 	padding-bottom:3%;
 }
+#socialMedias{
+	display:block !important;
+	width:8%;
+}
+/* .lider{ */
+	/* margin:0; */
+	/* width:25%; */
+/* } */
 .text1{
-	font-size:0.9em;
+	font-size:0.8em;
+	font-family: Helvetica, sans-serif;
+}
+.text2, .text3{
+	font-size:0.7em;
 	margin-bottom:2%;
+	text-align:justify;
+	width:90%;
+	font-family: Helvetica, sans-serif;
 }
 .title2{
-	font-size:1.3em;
+	font-size:1em;
+	text-align:center;
+}
+.title3{
+	font-size: 0.7em;
+	text-align: left;
+	width:40%;
 }
 ul li{
 	font-size:0.8rem;
 	margin-right:3%;
-}
-.logoFundacion{
- width:35%;	
 }
 #coment{
 	width:95%;
