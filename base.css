@@ -88,33 +88,26 @@ ul, li{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
+	margin:1%;
 }
 .title3 {
 	color:var(--white-color);
 	text-align:center;
-	width:200px;
 	font-family:"Quicksand", sans-serif;
-}
-.title4{
-	color:var(--bg-color1);
-	font-family:"Quicksand", sans-serif;
-	text-align:center;
-}
-.content{
-	width:60%;
-	margin:0 1% 0 1%;
-	text-align:center;
 }
 .image1{
 	width:100%;
 	max-width:auto;
 	border-radius:2%;
 }
+.content{
+	width:60%;
+	margin:0 2% 0 2%;
+}
 .image2{
-	width:200px;
-	height:150px;
+	width:80%;
+	height:80%;
 	border-radius:3%;
-	margin:0 auto;
 }
 .image3{
 	width:80%;
@@ -122,39 +115,33 @@ ul, li{
 .foto{
 	width:80%;
 	border-radius:50%;
-	margin:0 auto;
 }
 #fundadores{
-	display:flex;
-	flex-direction:column;
-	justify-content:space-between;
+	display:grid;
+	grid-template-columns:auto auto auto;
+	grid-template-rows:auto auto;
 	background:var(--bg-color4);
 	margin:0 auto;
 	height:100%;
 	padding-bottom:2%;
 }
 .color-word{
-	text-align:center;
-	color:white;
-	margin:1.5%;
+	display:inherit;
+	grid-column:1/4;
+	color:var(--white-color);
 }
-section > .cajaSubtitulo{
-	text-align:center;
-	width:100%;
+div[class="socios"] {
+	display:inherit;
+	column-gap:2%;	
 }
-.socios {
-	display:flex;
-	justify-content:space-evenly;
-	width:100%;
-}
-.lider {
-	display:flex;
-	flex-direction:column;
-	align-content:center;
-	text-align:justify;
-	width:25%;
+article[class="lider"] {
+	display:grid;
+	grid-row:2/3;
+	width:90%;
 	height:100%;
-	margin:0 auto;
+	justify-items:center;
+	justify-self:center;
+	align-items:center;
 }
 #seccionVideo{
 	display:flex;
@@ -163,22 +150,31 @@ section > .cajaSubtitulo{
 }
 #video{
 	margin:0 auto;
+	padding:2% 0 1% 0;
 }
 #servicios{
 	background-color:var(--bg-color4);
 	display:grid;
-	grid-template-columns:18% 18% 18% 18% ;
-	grid-template-rows:30% 30%;
-	justify-content:space-evenly;
+	grid-template-columns:auto auto auto auto;
+	grid-template-rows:auto auto;
+	column-gap:1.5%;
 	width:100%;
 	height:100%;
-	padding-top:2%;
 	padding-bottom:2%;
 }
- section > .especialidad{
-	text-align:left;
+div[class= "cajaSubtitulo"]{
+	display:inherit;
+	grid-column:1/5;
 	width:100%;
-	height:75%;
+}
+/*en resolucion de 320*600 se achican las img*/
+ div[class="especialidad"] {
+	display:inherit;
+	justify-items:center;
+	align-items:center;
+	margin:0 auto;
+	width:85%;
+	height:90%;
 }
 footer{
 	width:100%;
@@ -204,13 +200,11 @@ footer{
 }
 #socialMedias{
 	position:fixed;
-	justify-content:space-evenly;
 	text-align:center;
-	background-color:white;
 	background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255)) ;
 	border-radius: 3% ;
 	width:3%;
-	margin:8% 0 0 1%;
+	margin:9% 0 0 .5%;
 	z-index:1;
 }
 #contenedor{
@@ -226,5 +220,5 @@ footer{
 	box-sizing:border-box;
 	width:150px;
 	border-radius:3%;
-	border:1px solid #38b6d0;
+	border:2px solid #38b6d0;
 }
