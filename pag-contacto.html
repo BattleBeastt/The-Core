@@ -8,9 +8,16 @@
 <link rel="stylesheet" href="form-dona.css">
 <link rel="stylesheet" href="size-big.css" media="screen and (min-width:981px)">
 <link rel="stylesheet" href="size-middle.css" media="screen and (min-width:481px) and (max-width:980px)">
-<link rel="stylesheet" href="size-tiny.css" media="screen and (max-width:480px)">
+<link rel="stylesheet" href="size-tiny.css" media="screen and (min-width:320px) and (max-width:480px)">
 </head>
 	<body>
+		<div id="socialMedias" class="resize-big resize-medium">
+			<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3">
+			<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3">
+			<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3">
+			<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3">
+			<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3">
+		</div>
 		<header class="medium small">
 			<div class="logo-name">
 				<img src="galeria\fecv.jpg" alt="logo de Fundacion" class="logoFundacion">
@@ -21,55 +28,47 @@
 					<li><a href="pagSala.html" class="big" target="_blank">Inicio</a></li>
 					<li><a href="pag-contacto.html" class="big" target="_blank">Contactos</a></li>
 					<li><a href="pag-galeria.html" class="big" target="_blank">Galeria</a></li>
-					<li><a href="pag-formulario.html" class="big" target="_blank">Contribuir</a></li>
+					<li><a href="pag-Donacion.html" class="big" target="_blank">Contribuir</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main id="intro">
-				<h2 class="title2">Envianos tu solicitud</h2>
+				<h2 class="title2">¿En qué te ayudamos?</h2>
 				<form class="registro resize-small" action="mailto:sandramontenegrolainez@gmail.com" method="post">
 					<label  for="name">Nombres </label>
-					<input type="text" id="name" placeholder="introduzca sus nombres" required></br>
+					<input type="text" id="name" name="name" placeholder="introduzca sus nombres" required></br>
 					<label for="last-name">Apellidos </label>
-					<input type="text" id="lastName" placeholder="introduzca sus apellidos" required></br>
+					<input type="text" id="lastName" name="lastName" placeholder="introduzca sus apellidos" required></br>
 					<label class="correo" for="correo">Correo Electronico </label>
-					<input type="email" id="correo" placeholder="introduzca direccion de e-mail" required></br>
-					<label  for= "telefono">teléfono </label>
-					<input type="text" id="telefono" name="telefono" pattern="[0-9]+">
-					<h4 class="title4" align="center">¿En qué te ayudamos?</h4>
-					<textarea id="coment" rows="10" cols="39" name="coment"  placeholder="escriba aquí su consulta..." required></textarea>
-					<label for="boton">
-					<button type="submit" id="btn" name="boton" accesskey="enter">Enviar</button></label>
-				</form>
-				<section id="infoContato">
+					<input type="email" id="correo" name="correo" placeholder="introduzca su e-mail" required></br>
+					<label  for= "telefono">Teléfono </label>
+					<input type="tel" id="telefono" name="telefono" pattern="[0-9]+"></br>
+					<textarea id="coment" rows="10" cols="39" name="coment"  placeholder="escriba su consulta..." required></textarea>
+					<label for="btn">
+					<button type="submit" id="btn" name="btn" accesskey="enter" value="Enviar">Enviar</button></label>
+				</form>			
+				<section id="infoContacto">
 					<p class="info">tambien puedes contactarnos a nuestra oficina: </p><span><em>0912345678 - (04)1234578</em></span>
-					<p class="info">o escribirnos un correo electronico mas detallado, a la direccion: </p><span><em>sandramontenegrolainez@gmail.com</em></span>
-					<p class="info"><i>estaremos gustosos de atenderte!</i></p>
+					<p class="info">o escribenos un correo a la direccion: </p><span>sandramontenegrolainez@gmail.com</span>
+					<p class="info"><i>estaremos encantados de ayudarte!</i></p>
 				</section>
 		</main>
 		<footer>
-				<div id="direccion" class="resize-big resize-medium rezise-small">
-					<address>
-						Fundacion Ecuatoriana construyendo vidas<br/>
-						coop. independiente mz.A villa 16<br/>
-						cuidad Guayaquil - Ecuador<br/>
-						todos los derechos reservados</br>
-						2024 - 2025®</br>
-					</address>
-				</div>	
-						<div id="enlacesFooter" class="resize-big resize-medium rezise-small">
-							<a href="pagSala.html">Inicio</a>
-							<a href="#">sobre nosotros</a>
-							<a href="pag-contacto.html">Contactanos</a>
-							<a href="pag-galeria.html">Galeria</a>
-							<a href="pag-formulario.html">Deseas Contribuir?</a>
-						</div>
-					<div id="socialMedias" class="resize-big resize-medium">
-					<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3 rezise-small">
-						<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3 rezise-small">
-						<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3 rezise-small">
-						<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3 rezise-small">
-						<img src="galeria\tiktok.png" href="#" alt="logo tiktok" class="image3 rezise-small">
+			<div id="direccion">
+				<address class="resize-big resize-medium rezise-small">
+					Fundacion Ecuatoriana construyendo vidas</br>
+					coop. independiente mz.A villa 16</br>
+					cuidad Guayaquil - Ecuador</br>
+					 todos los derechos reservados</br>
+					 2024 - 2025 ®</br>
+				</address>
+			</div>	
+			<div id="enlacesFooter" class="resize-big resize-medium rezise-small">
+				<a href="pagSala.html">Inicio</a></br>
+				<a href="#mision">sobre nosotros</a></br>
+				<a href="pag-contacto.html">Contactos</a></br>
+				<a href="pag-galeria.html">Galeria</a></br>
+				<a href="pag-formulario.html">Deseas Contribuir?</a></br>
 			</div>
 		</footer>
 		<!-- <script refer src="animaciones.js"></script> -->

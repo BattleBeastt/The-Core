@@ -2,109 +2,122 @@
 	--input-color:#fff;
 	--color-cajas:#c4ffff;
 	--text-color:#20215e;
-	--enlaces-color:#48c335;
+	--enlaces-color:#00BFFF;
+	--leyendas-color:DodgerBlue;
 }
+/*adaptar el formato del formulario a la resolicion 300*600*/
 form{
 	font-family:Open sans, sans-serif;
+	font-style:normal;
+	font-weight:500;
 	background-color:var(--color-cajas);
-	color:#333333;
-	width:450px;
+	color:var(--text-color) ;
+	width:40%;
 	height:100%;
 	margin:0 auto;
-	padding-bottom:1%;
+	padding:1% 0 1% 0;
 	border:none;
 	border-radius:10px;
-	margin-bottom:10px;
 }
 form label{
 	font-size:1.3rem;
-	margin:7%;
-	margin-bottom:2%;
-	color:var(--text-color) ;
+	margin-left:7%;
 }
 input{
 	display:block;
 	width:80%;
-	height:30px;
+	height:100%;
 	background:var(--input-color);
-	font-size:16px;
+	font-style:normal;
+	font-size:1.1rem;
+	letter-spacing:1px;
+	font-weight:300;
 	border:none;
 	border-radius:10px;
 	margin-left:7%;
 }
-textarea{
-	margin-top:1%;
-	margin-left:2%;
+#valor{
+	display:inline-block;
+	width:25%;
+
+}
+textarea[id="coment"]{
+	font-style:normal;
+	font-weight:300;
+	margin:2%;
+	font-size:1.1rem;
+	width:95%;
 	border:none;
 	border-radius:10px;
-	font-size:19px;
 }
-a[class="terminos"]:hover{
+a[id="condicionesEnlace"]:hover{
 	color:var(--enlaces-color);
 }
 .pago {
 	margin:12px;
 }
-#medio, #divisa{
+#medio, #nacionalidad, .divisa{
 	padding:7px;
 	width:100px;
 	background-color:var(--input-color);
 	border:none;
 	border-radius:5px;
 }
-#valor {
-	width:80px;
+label[for="valor"]{
+	margin-left:10%;
+}
+#politicas, #terminos{
+	width:5%;
 	display:inline;
 }
-#politicas, #check{
-	width:18px;
-	display:inline;
-	position:relative;
-	top:8px;
+label[for="terminos"]{
+	margin:0 !important;
 }
-.condi {
-	margin-left:3px;
-	display:inline;
-	font-size:14px;
+label[for="politicas"]{
+	margin:0 !important;
 }
 button{
-	background-color:var(--enlaces-color) ;
+	background-color:var(--leyendas-color);
 	font-family:"roboto", sans-serif;
 	font-size:1.3rem;
 	font-weight:bold;
 	letter-spacing:1px;
-	margin:2% 0 1% 0;
+	margin:1%;
 	color:white;
 	width:25%;
 	height:35px;
 	border:none;
-	border-radius:4%;
+	border-radius:5%;
 	position:relative;
-	left:30%;
+	left:28%;
+	overflow:visible;
 }
 #btn:hover{
-	background:rgba(255, 255, 255, 0.5);
+	background:var(--enlaces-color);
 	color:black;
 }
 button:default{
-	box-shadow:2px 2px 3px 2px black;
+	box-shadow:5px 7px 3px 0 gray;
+	
 }
-#infoContato{
-	width:80%;
+section[id*="info"] {
+	width:50%;
+	height:100%;
 	margin:0 auto;
 	background-color:var(--color-cajas) ;
 	border-radius:10px;
+	text-align:center;	
 }
 .info, #infoContato{
 	text-align:center;
 }
-legend{
-	font-size:1.4rem;
-	color:gray;
+legend[class="leyenda"]{
+	font-size:1.3rem;
+	color:var(--leyendas-color) ;
 }
-fieldset{
+fieldset[class="divisor"]{
 	border:none;
-	border-top:2px solid gray;
+	border-top:2px solid var(--leyendas-color);
 }
 label[class="condiciones"]{
 	margin-left:2%;
@@ -113,13 +126,12 @@ label[class="condiciones"]{
 input[class="casilla"]{
 	margin:.5% 0 .5% 2%;
 }
-a[class="terminos"]{
-	color:blue;
-	letter-spacing:1px;
+a[id="condicionesEnlace"]{
+	color:var(--leyendas-color);
 }
 label[class="cant"]{
 	margin:2%;
 }
 select{
-	margin:1.5%;
+margin:1.5%;
 }
