@@ -5,7 +5,6 @@
 	--enlaces-color:#00BFFF;
 	--leyendas-color:DodgerBlue;
 }
-/*adaptar el formato del formulario a la resolicion 300*600*/
 form{
 	font-family:Open sans, sans-serif;
 	font-style:normal;
@@ -33,13 +32,13 @@ input{
 	letter-spacing:1px;
 	font-weight:300;
 	border:none;
-	border-radius:10px;
+	border-radius:5px;
 	margin-left:7%;
+	margin-bottom:1%;
 }
 #valor{
 	display:inline-block;
 	width:25%;
-
 }
 textarea[id="coment"]{
 	font-style:normal;
@@ -56,7 +55,7 @@ a[id="condicionesEnlace"]:hover{
 .pago {
 	margin:12px;
 }
-#medio, #nacionalidad, .divisa{
+#medio, #nacionalidad, #divisa{
 	padding:7px;
 	width:100px;
 	background-color:var(--input-color);
@@ -65,6 +64,7 @@ a[id="condicionesEnlace"]:hover{
 }
 label[for="valor"]{
 	margin-left:10%;
+	padding-bottom:5px;
 }
 #politicas, #terminos{
 	width:5%;
@@ -82,15 +82,15 @@ button{
 	font-size:1.3rem;
 	font-weight:bold;
 	letter-spacing:1px;
-	margin:1%;
 	color:white;
 	width:25%;
 	height:35px;
 	border:none;
 	border-radius:5%;
-	position:relative;
-	left:28%;
+	align-self:center;
 	overflow:visible;
+	position:relative;
+	left:30%;
 }
 #btn:hover{
 	background:var(--enlaces-color);
@@ -98,9 +98,9 @@ button{
 }
 button:default{
 	box-shadow:5px 7px 3px 0 gray;
-	
 }
 section[id*="info"] {
+	display:block;
 	width:50%;
 	height:100%;
 	margin:0 auto;
@@ -108,7 +108,12 @@ section[id*="info"] {
 	border-radius:10px;
 	text-align:center;	
 }
-.info, #infoContato{
+section[id="infoNota"]{
+	padding:1%;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.info{
 	text-align:center;
 }
 legend[class="leyenda"]{
