@@ -78,11 +78,13 @@ a:hover{
 	color: var(--h-color);
 	text-decoration: underline;
 }
-ul, li{
-	display:flex;
-	justify-content:start;
-	font-weight:bold;
+a:focus:visited{
+	color:yellow;
+}
+:is(ul, li) {
 	list-style-type:none;
+	display:flex;
+	font-weight:bold;
 	padding:0;
 	padding-right:8px;
 }

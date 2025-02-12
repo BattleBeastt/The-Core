@@ -2,9 +2,6 @@
 display:inline !important;
 border:none;
 }
-.big {
-	align-self:center;
-}
 li .big {
 	font-size:1.2em;
 }
