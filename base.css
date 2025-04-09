@@ -58,6 +58,7 @@ h1{
 	color:var(--bg-color1);
 	font-size:2em;
 	font-family:"Quicksand", sans-serif;
+	font-weight:bolder;
 	text-align:center;
 }
 nav{
@@ -182,14 +183,14 @@ section > .cajaSubtitulo{
 	width:100%;
 	height:100%;
 	overflow:visible;
-	border:1px solid black;
 }
 footer{
 	width:100%;
+	height:100%;
 	color:white;
 	background-color:var(--bg-color1);
 	display:flex;
-	justify-content:space-evenly;
+	justify-content:space-between;
 	align-items:center;
 	padding-top:1%;
 	padding-bottom:1%;
@@ -197,14 +198,16 @@ footer{
 #direccion{
 	width:100%;
 	height:100%;
+	font-size:15px;
+	text-align:left;
 	padding-top:2%;
 	margin-left:2%;
-	font-size:14px;
 }
 #enlacesFooter{
 	width:100%;
 	height:100%;
 	margin-left:5%;
+	text-align:right;
 }
 #socialMedias{
 	position:fixed;

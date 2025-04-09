@@ -6,9 +6,9 @@
 	width:100%;
 	font-family: Helvetica, sans-serif;
 }
-.rezise-small {
+.rezise-small{
 	display:inline-block;
-	flex-direction:column;
+	flex-direction:row-reverse;
 	font-size:0.7em;
 }
 .logoFundacion{
