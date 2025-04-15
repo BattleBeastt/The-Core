@@ -2,13 +2,14 @@
 	--input-color:#fff;
 	--color-cajas:#c4ffff;
 	--text-color:#20215e;
+	--text-color2:#d12e00;
 	--enlaces-color:#48c335;
 }
 /* aun falta por disminuir el ancho del formulario cuando el viewport es de almenos 320px  */
 form{
 	font-family:Open sans, sans-serif;
 	background-color:var(--color-cajas);
-	width:auto;
+	width:35%;
 	height:100%;
 	margin:0 auto;
 	padding-top:1%;
@@ -26,7 +27,7 @@ form label{
 }
 input{
 	display:block;
-	width:80%;
+	width:85%;
 	height:30px;
 	background:var(--input-color);
 	font-size:16px;
@@ -42,6 +43,7 @@ textarea{
 }
 a[class="terminos"]:hover{
 	color:var(--enlaces-color);
+	text-decoration:none;
 }
 .pago {
 	margin:12px;
@@ -79,33 +81,41 @@ button{
 	width:25%;
 	height:35px;
 	border:none;
-	border-radius:4%;
+	border-radius:5px;
 	position:relative;
 	left:30%;
+	transition:
+	width 4s,
+	background 1s;
 }
 #btn:hover{
-	background:rgba(255, 255, 255, 0.5);
+	background:var(--text-color2);
 	color:black;
+	width:400px;
+	transition:1s;
 }
 button:default{
 	box-shadow:2px 2px 3px 2px black;
 }
-#infoContato{
+#infoContacto{
 	width:50%;
-	margin:0 auto;
+	margin:1% auto 1% auto;
+	padding-top:.5%;
+	padding-bottom:.5%;
 	background-color:var(--color-cajas) ;
 	border-radius:10px;
+	letter-spacing:1px;
 }
-.info, #infoContato{
+.info, #infoContacto{
 	text-align:center;
 }
 legend{
 	font-size:1.4rem;
-	color:gray;
+	color:var(--text-color2);
 }
 fieldset{
 	border:none;
-	border-top:2px solid gray;
+	border-top:2px solid var(--text-color2) ;
 }
 label[class="condiciones"]{
 	margin-left:2%;
@@ -115,7 +125,7 @@ input[class="casilla"]{
 	margin:.5% 0 .5% 2%;
 }
 a[class="terminos"]{
-	color:blue;
+	color:var(--text-color2);
 	letter-spacing:1px;
 }
 label[class="cant"]{
@@ -126,11 +136,4 @@ select{
 }
 span{
 	word-break:break-word;
-}
-/* sigue sin funcionar los media querys */
-@media and (max-width:320px), and only screen{
-	form{
-		background:blue;
-		width:95%;
-	}
 }
