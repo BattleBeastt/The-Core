@@ -4,8 +4,8 @@
 	--text-color:#20215e;
 	--text-color2:#d12e00;
 	--enlaces-color:#48c335;
+	--font-family: "Georgia", sans-serif;
 }
-/* aun falta por disminuir el ancho del formulario cuando el viewport es de almenos 320px  */
 form{
 	font-family:Open sans, sans-serif;
 	background-color:var(--color-cajas);
@@ -31,6 +31,7 @@ input{
 	height:30px;
 	background:var(--input-color);
 	font-size:16px;
+	font-family:var(--font-family);
 	border:none;
 	border-radius:10px;
 	margin-left:7%;
@@ -41,23 +42,19 @@ textarea{
 	border-radius:10px;
 	font-size:19px;
 }
-a[class="terminos"]:hover{
-	color:var(--enlaces-color);
-	text-decoration:none;
-}
-.pago {
-	margin:12px;
-}
 #medio, #divisa{
-	padding:7px;
+	font-family:var(--font-family) ;
+	height:30px;
 	width:100px;
+	margin-bottom:10px;
 	background-color:var(--input-color);
 	border:none;
 	border-radius:5px;
 }
 #valor {
-	width:80px;
+	width:100px;
 	display:inline;
+	margin-left:5px;
 }
 #politicas, #check{
 	width:18px;
@@ -76,7 +73,7 @@ button{
 	font-size:1.3rem;
 	font-weight:bold;
 	letter-spacing:1px;
-	margin:2% 0 1% 0;
+	margin:5% 0 1% 0;
 	color:white;
 	width:25%;
 	height:35px;
@@ -84,18 +81,16 @@ button{
 	border-radius:5px;
 	position:relative;
 	left:30%;
-	transition:
-	width 4s,
-	background 1s;
+	transition:0.5s ease;
+	transition-property: all;
 }
 #btn:hover{
+	font-size:1.6rem;
 	background:var(--text-color2);
-	color:black;
-	width:400px;
-	transition:1s;
+	transform:translateY(3px) translatex(3px);
 }
 button:default{
-	box-shadow:2px 2px 3px 2px black;
+	box-shadow:2px 2px 3px #000c;
 }
 #infoContacto{
 	width:50%;
@@ -118,21 +113,22 @@ fieldset{
 	border-top:2px solid var(--text-color2) ;
 }
 label[class="condiciones"]{
+	font-size:1rem;
 	margin-left:2%;
 	letter-spacing:1px;
+}
+a[class="terminos"]{
+	color:var(--enlaces-color);
+	letter-spacing:0.5px;
 }
 input[class="casilla"]{
 	margin:.5% 0 .5% 2%;
 }
-a[class="terminos"]{
-	color:var(--text-color2);
-	letter-spacing:1px;
-}
 label[class="cant"]{
-	margin:2%;
+	margin:1%;
 }
 select{
-	margin:1.5%;
+	margin:1%;
 }
 span{
 	word-break:break-word;

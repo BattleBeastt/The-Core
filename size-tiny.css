@@ -6,6 +6,17 @@
 	width:100%;
 	font-family: Helvetica, sans-serif;
 }
+form{
+	width:95%;
+}
+#btn{
+	width:30%;
+	font-size:1rem;
+}
+#infoContacto{
+	width:75%;
+	line-height:95%;
+}
 .rezise-small{
 	display:inline-block;
 	flex-direction:row-reverse;

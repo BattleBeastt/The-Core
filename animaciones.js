@@ -1,10 +1,3 @@
-const flechaIzquierda = document.getElementById('flechaIzquierda');
-const flechaDerecha = document.getElementById('flechaDerecha');
-
-flechaDerecha.addEventListener('click', () => {
-	fila.scrollLeft += fila.offSetWidth;
-});
-
-flechaIzquierda.addEventListener('click', () => {
-    fila.scrollLeft -= fila.offsetWidth;
-});
+const button = document.querySelector("button");
+const label = document.querySelector("label");
+button.addEventListener("click", () => label.toggleAttribute("open"));

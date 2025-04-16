@@ -14,7 +14,7 @@
 	<header class="medium small">
 		<div class="logo-name">
 			<img src="galeria\fecv.jpg" alt="logo de Fundacion" class="logoFundacion">
-			<h1 id="name-empresa" class="big medium">FECV</h1>
+			<h1 id="name-empresa" class="medium">FECV</h1>
 		</div>
 		<nav>
 			<ul>
@@ -47,10 +47,10 @@
 						<label for="cedula">ID o pasaporte </label>
 						<input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
 				</fieldset>
-<!--emplear codigo JS para dinamizar los medios de pago-->
+<!--introducir una API para procesar el medio de donacion-->
 			<fieldset class="divisor">
-				<legend class="leyenda">Donativo</legend>
-				<label for="pago" class="cant">Medio de pago</label>
+				<legend class="leyenda">tipo de donación</legend>
+				<label for="pago" class="cant">Medio de donacion</label>
 				<select id="medio">
 					<option>Tarjeta de Crédito</option>
 					<option>Transferencia</option>
@@ -69,12 +69,12 @@
 					<option>CNH</option>
 					<option>HKD</option>
 					<option>NZD</option>    
-				</select></br>
-				<label for="valor" class="cant">valor a donar</label>
-				<input id="valor" name="valor" type="text" placeholder="e.g. 800" required>
+				</select><br>
+				<label for="valor" class="cant">Valor a donar</label>
+				<input id="valor" name="valor" type="text" placeholder="cantidad..." pattern="[0-9]+" required>
 			</fieldset>
 					<input type="checkbox" name="requisito" id="politicas" class="casilla" required>
-					<label for="politicas" class="condiciones"> comprendo y acepto los <a href="#" class="terminos">terminos, condiciones y politicas de privacidad</a></label><br>
+					<label for="politicas" class="condiciones">comprendo y acepto los<a href="#" class="terminos">terminos y condiciones de privacidad suscritos en la Fundacion</a></label><br>
 					<input type="checkbox" name="requisito" id="check" class="casilla" required>
 					<label for="check" class="condiciones">acepto que toda la informacion proporcionada en este formulario es veraz</label><br>
 					<label for="boton">
@@ -100,5 +100,6 @@
 				<a href="pag-formulario.html">Contribuir</a><br>
 			</div>
 		</footer>
+		<script refer src="animaciones.js"></script>
 </body>
 </html>
