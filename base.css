@@ -218,15 +218,46 @@ footer{
 	margin-right:10px;
 }
 #socialMedias{
+	display:flex !important;
 	position:fixed;
 	justify-content:space-evenly;
-	text-align:center;
-	background-color:white;
+	align-items:center;
 	background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255)) ;
-	border-radius: 5px ;
+	border-radius: 10px ;
 	width:3%;
-	margin:10% 0 0 1%;
+	height:21%;
+	margin:7% 0 0 .5%;
+	transform:translateX(-45px);
 	z-index:1;
+	transition: all 0.4s ease-in-out;
+}
+.iconos-redes-sociales{
+	display:block;
+	width:3%;
+	
+}
+.contenedor-btn{
+	width:80%;
+}
+/* ocultar el contenedor de las redes sociales y crear boton para aplicar active y que aparezcan cuando el puntero active la flecha */
+
+#socialMedias:active{
+	transform:translateX(8px);
+}
+#btn-redes-sociales{
+	color:gray;
+	font-size:2rem;
+	text-align:center;
+	width:100%;
+	background-color:white;
+	filter:opacity(0.5);
+	border-radius:50%;
+	transform: translateX(25px) ;
+}
+.icono-flecha{
+	margin:0 auto;
+	text-align:center;
+	width:35px;
 }
 #contenedor{
 	display:flex;
