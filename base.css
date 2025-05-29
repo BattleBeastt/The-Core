@@ -126,6 +126,16 @@ ul, li{
 }
 .image3{
 	width:30px;
+	margin-bottom:5%;
+}
+.image3:last-child{
+	border-radius:50%;
+	position: absolute;
+	top: 40%;
+	left: 100%;
+}
+.image3:hover{
+	opacity:0.7;
 }
 .foto{
 	width:100%;
@@ -219,14 +229,14 @@ footer{
 }
 #socialMedias{
 	display:flex !important;
+	flex-direction: column;
 	position:fixed;
-	justify-content:space-evenly;
 	align-items:center;
-	background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255)) ;
-	border-radius: 10px ;
+	background: linear-gradient(90deg,var(--h-color), var(--white-color));
+	border-radius:10px;
 	width:3%;
-	height:21%;
-	margin:7% 0 0 .5%;
+	height:19%;
+	margin:2% 0 0 0;	
 	transform:translateX(-45px);
 	z-index:1;
 	transition: all 0.4s ease-in-out;
@@ -234,14 +244,13 @@ footer{
 .iconos-redes-sociales{
 	display:block;
 	width:3%;
-	
 }
 .contenedor-btn{
 	width:80%;
 }
 /* ocultar el contenedor de las redes sociales y crear boton para aplicar active y que aparezcan cuando el puntero active la flecha */
 
-#socialMedias:active{
+#socialMedias:hover{
 	transform:translateX(8px);
 }
 #btn-redes-sociales{
