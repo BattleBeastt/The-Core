@@ -38,6 +38,7 @@ header{
 	align-items:center;
 	padding:.5% 0 .5% 0;
 	border-radius:5px;
+	filter: opacity(0.9);
 }
 .logo-name{
 	display:inherit;
@@ -54,6 +55,7 @@ h1{
 	color:var(--white-color);
 	font-size:2em;
 	font-family:Open sans, sans-serif;
+	border: none !important;
 }
 .title2{
 	color:var(--bg-color1);
@@ -111,6 +113,30 @@ ul, li{
 	margin:0 1% 0 1%;
 	padding:0 3% 0 3%;
 	text-align:center;
+}
+#portada{
+	background-image: url(galeria/GYE.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 550px;
+	margin:1% 0 1% 0;
+}
+.frase{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 2.5rem;
+	color: black;
+	text-align: center;
+	text-shadow: 2px 2px 1px white;
+	line-height: 1.2;
+	letter-spacing: .5px;
+	margin: 0 auto;
+	position: relative;
+	top: 40%;
+}
+.img-portada{
+	width: 59%;
+	filter: opacity(0.9);
 }
 .image1{
 	width:100%;
@@ -212,6 +238,7 @@ footer{
 	align-items:center;
 	padding-top:1%;
 	padding-bottom:1%;
+	filter: opacity(0.8);
 }
 #direccion{
 	width:100%;
