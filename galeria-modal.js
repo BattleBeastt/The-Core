@@ -47,5 +47,3 @@ modal.onclick = function(e) {
 		imgModal.src = '';
 	}
 };
-
-

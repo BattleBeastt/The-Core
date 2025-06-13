@@ -19,23 +19,15 @@
 <fieldset id="donacion">
 	<legend id="title3">Donativo</legend>
 	<label class="pago">Medio de Pago</label>
-	<select class="medio">
-	<option>Tarjeta de Crédito</option>
-	<option>Transferencia</option>
-	<option>Débito Bancario</option>
+	<select class="medio" id="medio-pago">
+	<option value="tarjeta">Tarjeta de Crédito</option>
+	<option value="transferencia">Transferencia</option>
+	<option value="debito">Débito Bancario</option>
 	</select>
+	<div id="pago-tarjeta" style="display:none; margin-top:10px;"></div>
 <label id="divis">Divisa</label>
-<select class="divisa">
-<option>USD</option>    
-<option>EUR</option>    
-<option>JPY</option>    
-<option>GBP</option>
-<option>AUD</option>
-<option>CAD</option>
-<option>CHF</option>
-<option>CNH</option>
-<option>HKD</option>
-<option>NZD</option>    
+<select class="divisa" id="select-paises">
+	<option value="">Cargando países...</option>
 </select>
 </fieldset>
 <label for="valor" class="cant">Cantidad </label><input id="valor" type="text" placeholder="e.g. 800" required><br/>
@@ -43,5 +35,7 @@
 <input type="checkbox" class="conditions" name="requisito" required><label class="condi">comprendo y acepto toda la informacion proporcionada en este formulario</label>
 <input type="submit" value="DONAR" class="boton" name="requisito">
 </form>
+<script src="paises.js"></script>
+<script src="pago-tarjeta.js"></script>
 </body>
 </html>
