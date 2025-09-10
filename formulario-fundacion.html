@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>formulario para donativos</title>
 <link rel="stylesheet" href="form-dona.css">
+<link rel="stylesheet" href="base.css">
 </head>
 <body>
 <form id="registro" action="mailto:guayacosfeed@gmail.com" method="post">
@@ -24,7 +25,29 @@
 	<option value="transferencia">Transferencia</option>
 	<option value="debito">Débito Bancario</option>
 	</select>
-	<div id="pago-tarjeta" style="display:none; margin-top:10px;"></div>
+	<div id="pago-tarjeta" style="display:none; margin-top:10px;">
+		<label class="card-number">Número de Tarjeta</label>
+		<input type="text" id="card-number" pattern="[0-9]{16}" maxlength="16" placeholder="1234 5678 9012 3456" required><br/>
+		
+		<div class="card-expiry-cvv">
+			<div class="expiry">
+				<label>Fecha de Vencimiento</label>
+				<div class="date-inputs">
+					<input type="text" id="card-month" pattern="[0-9]{2}" maxlength="2" placeholder="MM" required>
+					<span>/</span>
+					<input type="text" id="card-year" pattern="[0-9]{2}" maxlength="2" placeholder="YY" required>
+				</div>
+			</div>
+			
+			<div class="cvv">
+				<label>CVV</label>
+				<input type="text" id="card-cvv" pattern="[0-9]{3,4}" maxlength="4" placeholder="123" required>
+			</div>
+		</div>
+
+		<label class="card-name">Nombre en la Tarjeta</label>
+		<input type="text" id="card-name" placeholder="NOMBRE COMO APARECE EN LA TARJETA" required><br/>
+	</div>
 <label id="divis">Divisa</label>
 <select class="divisa" id="select-paises">
 	<option value="">Cargando países...</option>

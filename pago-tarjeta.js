@@ -1,42 +1,56 @@
 document.addEventListener('DOMContentLoaded', function() {
     const medioPago = document.getElementById('medio-pago');
     const divPagoTarjeta = document.getElementById('pago-tarjeta');
+    const cardNumber = document.getElementById('card-number');
+    const cardMonth = document.getElementById('card-month');
+    const cardYear = document.getElementById('card-year');
+    const cardCVV = document.getElementById('card-cvv');
 
     medioPago.addEventListener('change', function() {
         if (medioPago.value === 'tarjeta') {
             divPagoTarjeta.style.display = 'block';
-            if (!divPagoTarjeta.innerHTML) {
-                // Ejemplo: integración con PayPal Smart Buttons
-                divPagoTarjeta.innerHTML = '<div id="paypal-button-container"></div>';
-                if (!document.getElementById('paypal-sdk')) {
-                    const script = document.createElement('script');
-                    script.id = 'paypal-sdk';
-                    script.src = 'https://www.paypal.com/sdk/js?client-id=sb&components=buttons,funding-eligibility&currency=USD&disable-funding=venmo';
-                    script.onload = function() {
-                        paypal.Buttons({
-                            style: { layout: 'vertical' },
-                            fundingSource: paypal.FUNDING.CARD,
-                            createOrder: function(data, actions) {
-                                return actions.order.create({
-                                    purchase_units: [{
-                                        amount: {
-                                            value: document.getElementById('valor').value || '1'
-                                        }
-                                    }]
-                                });
-                            },
-                            onApprove: function(data, actions) {
-                                return actions.order.capture().then(function(details) {
-                                    alert('Pago realizado por ' + details.payer.name.given_name);
-                                });
-                            }
-                        }).render('#paypal-button-container');
-                    };
-                    document.body.appendChild(script);
-                }
-            }
         } else {
             divPagoTarjeta.style.display = 'none';
         }
+    });
+
+    // Formatear número de tarjeta
+    if (cardNumber) {
+        cardNumber.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s/g, '');
+            if (value.length > 16) value = value.slice(0, 16);
+            e.target.value = value.replace(/(.{4})/g, '$1 ').trim();
+        });
+    }
+
+    // Validar mes
+    if (cardMonth) {
+        cardMonth.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                value = Math.min(Math.max(parseInt(value), 1), 12).toString().padStart(2, '0');
+            }
+            e.target.value = value;
+        });
+    }
+
+    // Validar año
+    if (cardYear) {
+        cardYear.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 2) value = value.slice(0, 2);
+            e.target.value = value;
+        });
+    }
+
+    // Validar CVV
+    if (cardCVV) {
+        cardCVV.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 4) value = value.slice(0, 4);
+            e.target.value = value;
+        });
+    }
+});
     });
 });
