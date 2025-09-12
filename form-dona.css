@@ -4,7 +4,7 @@
 	--color-cajas:#ffffff73;
 	--text-color:#20215e;
 	--text-color2:#828282;
-	--enlaces-color:#48c335;
+	--enlaces-color:blue;
 	--font-family: "libre Franklin" ,"Georgia", sans-serif;	
 }
 
@@ -93,10 +93,11 @@ input{
 	margin-left:7%;
 }
 textarea{
-	margin: 0 0 0 4%;
 	border:none;
 	border-radius:10px;
 	font-size:19px;
+	display: block; 
+	margin: 0 auto;
 }
 #medio-pago, #medio, #divisa{
 	font-family:var(--font-family) ;
@@ -142,7 +143,7 @@ button{
 }
 #btn:hover{
 	font-size:1.6rem;
-	background:var(--text-color2);
+	background:var(--text-color);
 	transform:translateY(3px) translatex(3px);
 }
 button:default{
