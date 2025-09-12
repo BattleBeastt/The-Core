@@ -34,7 +34,7 @@
 	</div>
 		<main id="intro">
 			<h2 class="title2">REGISTRO DE DONACION</h2>
-			<form class="registro resize-small" action="mailto:guayacosfeed@gmail.com" method="post">
+			<form method="post" action="mailto:guayacosfeed@gmail.com" class="registro resize-small">
 				<fieldset class="divisor">
 					<legend class="leyenda">Datos personales</legend>
 						<label for="name">Nombres </label>
@@ -46,20 +46,20 @@
 						<label for="phone">nº de teléfono </label>
 						<input type="text" id="phone" name="phone" placeholder="ingrese un numero de telefono" class="resize-small" required><br>
 						<label for="cedula">ID o pasaporte </label>
-						<input type="text" id="cedula" name="cedula" min="5" max="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
+						<input type="text" id="cedula" name="cedula" maxlength="12" placeholder="numero de identificacion o pasaporte" class="resize-small" required><br>
 				</fieldset>
 <!--introducir una API para procesar el medio de donacion-->
 			<fieldset class="divisor">
-				<legend class="leyenda">tipo de donación</legend>
+				<legend class="leyenda">Tipos de donación</legend>
 				<label for="pago" class="cant">Medio de donacion</label>
-				<select id="medio">
-					<option>Tarjeta de Crédito</option>
-					<option>Transferencia</option>
-					<option>Débito Bancario</option>
+				<select id="medio-pago">
+					<option value="tarjeta">Tarjeta de Crédito</option>
+					<option value="transferencia">Transferencia</option>
+					<option value="debito">Débito Bancario</option>
 				</select></br>
 				<div id="pago-tarjeta" style="display:none; margin-top:10px;">
 		<label class="card-number">Número de Tarjeta</label>
-		<input type="text" id="card-number" pattern="[0-9]{16}" maxlength="16" placeholder="1234 5678 9012 3456" required><br/>
+		<input type="text" id="card-number" pattern="[0-9 ]{19}" maxlength="19" inputmode="numeric" placeholder="1234 5678 9012 3456" required><br/>
 		
 		<div class="card-expiry-cvv">
 			<div class="expiry">
@@ -125,6 +125,7 @@
 			</div>
 		</footer>
 		<script refer src="animaciones.js"></script>
-		<script refer src="pago-tarjeta.js"></script>
+		<script src="pago-tarjeta.js"></script>
+
 </body>
 </html>

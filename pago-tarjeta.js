@@ -17,9 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Formatear número de tarjeta
     if (cardNumber) {
         cardNumber.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\s/g, '');
+            // Eliminar cualquier caracter que no sea número
+            let value = e.target.value.replace(/\D/g, '');
+            
+            // Limitar a 16 dígitos
             if (value.length > 16) value = value.slice(0, 16);
-            e.target.value = value.replace(/(.{4})/g, '$1 ').trim();
+            
+            // Formatear en grupos de 4 dígitos
+            let formattedValue = '';
+            for (let i = 0; i < value.length; i++) {
+                if (i > 0 && i % 4 === 0) {
+                    formattedValue += ' ';
+                }
+                formattedValue += value[i];
+            }
+            
+            e.target.value = formattedValue;
         });
     }
 

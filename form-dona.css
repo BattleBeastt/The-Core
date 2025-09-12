@@ -1,17 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
 	--input-color:#fff;
 	--color-cajas:#ffffff73;
 	--text-color:#20215e;
-	--text-color2:#d12e00;
+	--text-color2:#828282;
 	--enlaces-color:#48c335;
-	--font-family: "Georgia", sans-serif;	
-}
-#medio, #divisa{
-	font-family:var(--font-family);
-	height:30px;
-	width:100px;
-	margin-bottom:10px;
-	background-color:var(--input-color);
+	--font-family: "libre Franklin" ,"Georgia", sans-serif;	
 }
 
 /* Estilos para campos de tarjeta de crédito */
@@ -86,7 +80,6 @@ form label{
 	margin:7%;
 	margin-bottom:2%;
 	color:var(--text-color) ;
-	font-weight:bold;
 }
 input{
 	display:block;
@@ -105,7 +98,7 @@ textarea{
 	border-radius:10px;
 	font-size:19px;
 }
-#medio, #divisa{
+#medio-pago, #medio, #divisa{
 	font-family:var(--font-family) ;
 	height:30px;
 	width:100px;
