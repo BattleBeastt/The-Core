@@ -379,3 +379,37 @@ footer{
 .carrusel-btn:hover {
 	background: rgba(0,0,0,0.8);
 }
+.language-selector {
+	margin: 10px;
+	text-align: right;
+	position: relative;
+}
+.translate-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+.translate-icon:hover {
+	transform: scale(1.1);
+}
+.language-menu {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	z-index: 1000;
+}
+.language-option {
+	padding: 8px 15px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	white-space: nowrap;
+}
+.language-option:hover {
+	background-color: #f0f0f0;
+}
