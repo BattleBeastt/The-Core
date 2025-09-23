@@ -380,36 +380,59 @@ footer{
 	background: rgba(0,0,0,0.8);
 }
 .language-selector {
-	margin: 10px;
-	text-align: right;
-	position: relative;
+    margin: 10px;
+    text-align: right;
+    position: relative;
 }
+
 .translate-icon {
-	width: 30px;
-	height: 30px;
-	cursor: pointer;
-	transition: transform 0.2s;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
+
 .translate-icon:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
-.language-menu {
-	display: none;
-	position: absolute;
-	right: 0;
-	top: 40px;
-	background: white;
-	border: 1px solid #ddd;
-	border-radius: 4px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-	z-index: 1000;
+
+#google_translate_element {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 10px;
 }
-.language-option {
-	padding: 8px 15px;
-	cursor: pointer;
-	transition: background-color 0.2s;
-	white-space: nowrap;
+
+/* Estilos para el selector de Google Translate */
+.goog-te-combo {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-family: inherit;
+    font-size: 14px;
 }
-.language-option:hover {
-	background-color: #f0f0f0;
+
+/* Ocultar logo y branding de Google */
+.goog-logo-link, 
+.goog-te-gadget span,
+.goog-te-banner-frame,
+#goog-gt-tt {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+    font-size: 0px !important;
+}
+
+.goog-te-gadget select {
+    color: #333;
+    font-size: 14px;
 }
