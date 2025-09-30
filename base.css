@@ -62,9 +62,7 @@ h1{
 	font-size:2em;
 	font-family:"Quicksand", sans-serif;
 	text-align:center;
-	padding-top: 1%;
-	padding-bottom: 2%;
-	text-decoration: underline;
+	
 }
 nav{
 	display:flex;
@@ -401,9 +399,9 @@ footer{
     position: absolute;
     right: 0;
     top: 40px;
-    background: white;
+    background: gray;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 1000;
     padding: 10px;

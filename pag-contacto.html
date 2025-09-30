@@ -24,26 +24,29 @@
 					<li><a href="pag-formulario.html" class="big" target="_blank">Contribuir</a></li>
 				</ul>
 			</nav>
+			<div class="language-selector">
+				<img src="galeria/idiomas2.png" alt="Cambiar idioma" class="translate-icon" onclick="toggleLanguageMenu()">
+				<div id="google_translate_element"></div>
+			</div>
 		</header>
 		<div id="socialMedias" class="resize-big resize-medium">
 			<img src="galeria\youtube.png" href="#" alt="logo youtube" class="image3">
 			<img src="galeria\facebook.png" href="#" alt="logo facebook" class="image3">
-			<img src="galeria\whatsapp.png" href="#" alt="logo whatsapp" class="image3">
+			<a href="https://wa.me/593985792388" target="_blank"><img src="galeria\whatsapp.png" alt="logo whatsapp" class="image3"></a>
 			<img src="galeria\instagram.png" href="#" alt="logo instagram" class="image3">
 			<img src="galeria\mayorque.png" href="#" alt="viñeta redes sociales" class="image3 viñeta">
 		</div>
-		<!-- <img src="galeria\flechaDere.png" alt="flecha derecha" class="icono-flecha"> -->
 		<main id="intro">
 				<h2 class="title2">Envianos tu consulta</h2>
-				<form class="registro" action="mailto:sandramontenegrolainez@gmail.com" method="post">
+				<form method="post" action="mailto:construyendovidasecuador@gmail.com" class="registro">
 					<label  for="name">Nombres </label>
-					<input type="text" id="name" placeholder="introduzca sus nombres" required></br>
+					<input type="text" id="name" placeholder="ingrese sus nombres" required></br>
 					<label for="last-name">Apellidos </label>
-					<input type="text" id="lastName" placeholder="introduzca sus apellidos" required></br>
+					<input type="text" id="lastName" placeholder="ingrese sus apellidos" required></br>
 					<label class="correo" for="correo">Correo Electronico </label>
-					<input type="email" id="correo" placeholder="introduzca direccion de e-mail" required></br>
-					<label  for= "telefono">Teléfono </label>
-					<input type="text" id="telefono" name="telefono" pattern="[0-9]+">
+					<input type="email" id="correo" placeholder="ingrese su direccion de e-mail" required></br>
+					<label  for= "telefono">Asunto </label>
+					<input type="text" id="telefono" name="telefono" placeholder="ingrese el asunto de su consulta" required></br>
 					<h4 class="title4" align="center">¿En qué te ayudamos?</h4>
 					<textarea id="coment" rows="8" cols="39" name="coment" placeholder="escriba aquí su consulta..."></textarea>
 					<label for="boton">
@@ -51,8 +54,8 @@
 				</form>
 				<section id="infoContacto">
 					<p class="info">tambien puedes contactarnos a nuestra oficina: </p><span style="color:tomato"><em>0912345678 - (04)1234578</em></span>
-					<p class="info">o escribirnos un correo electronico mas detallado, a la direccion: </p><span style="color:tomato"><em>sandramontenegrolainez@gmail.com</em></span>
-					<p class="info"><i>estamos aquí para ayudarte!</i></p>
+					<p class="info">o escribenos al número de whatsapp: </p><span style="color:tomato"><em>+593 985792388</em></span>
+					<p class="info"><i>!estamos aquí para apoyarte¡</i></p>
 				</section>
 		</main>
 		<footer>
@@ -74,6 +77,6 @@
 						</div>
 		</footer>
 		<script src="translations.js"></script>
-		<!-- <script refer src="animaciones.js"></script> -->
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
